@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "effect_4_frame_03",
+    "texture": "01b17336-bca0-4cdd-8661-3252a5eee3c1",
+    "atlas": "523db6a3-9c87-4bd2-adf4-3b4d8327983c",
+    "rect": [
+      65,
+      49,
+      29,
+      31
+    ],
+    "offset": [
+      -1,
+      -1
+    ],
+    "originalSize": [
+      51,
+      63
+    ],
+    "rotated": 1
+  }
+}

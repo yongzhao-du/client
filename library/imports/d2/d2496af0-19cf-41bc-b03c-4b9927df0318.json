@@ -1,0 +1,32 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "idle",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.016666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "b73bafd7-4b16-4a42-b81e-262d32dd1fa0"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "comps": {
+      "cc.BoxCollider": {}
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "body_action_hurtfly_01",
+    "texture": "74d463ab-e30e-403c-87b2-c0caa5a5a815",
+    "atlas": "91c5be35-8501-4ffb-aea6-bc0e397141b5",
+    "rect": [
+      345,
+      202,
+      106,
+      152
+    ],
+    "offset": [
+      -7,
+      1
+    ],
+    "originalSize": [
+      122,
+      158
+    ],
+    "rotated": 1
+  }
+}

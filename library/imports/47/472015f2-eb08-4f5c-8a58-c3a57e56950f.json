@@ -1,0 +1,63 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "collapse",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "b00e29ba-c5b8-439e-8c8f-fa8397d09d3c"
+                }
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": {
+                  "__uuid__": "297d90ee-3fdb-4bd1-b143-7499021679c8"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "297d90ee-3fdb-4bd1-b143-7499021679c8"
+                }
+              },
+              {
+                "frame": 0.38333333333333336,
+                "value": {
+                  "__uuid__": "9e9b2e52-159f-44c6-97b9-3c6c5aaece49"
+                }
+              }
+            ]
+          }
+        },
+        "props": {
+          "y": [
+            {
+              "frame": 0.03333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 10
+            },
+            {
+              "frame": 0.3,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

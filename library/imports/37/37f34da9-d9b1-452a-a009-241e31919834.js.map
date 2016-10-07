@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,CAAC,gBAAgB,GAAG;AAC9B,UAAM,EAAE,CAAC;AACT,cAAU,EAAE,CAAC;AACb,gBAAY,EAAE,CAAC;AACf,eAAW,EAAE,CAAC;CACjB,CAAA;;AAED,MAAM,CAAC,OAAO,CAAC,UAAU,GAAG;AACxB,UAAM,EAAE,CAAC;AACT,OAAG,EAAE,CAAC;CACT,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports.TimePointActType = {\r\n    DAMAGE: 1,\r\n    SELF_DELAY: 2,\r\n    SHOCK_SCREEN: 3,\r\n    PLAY_EFFECT: 4,\r\n}\r\n\r\nmodule.exports.AttackType = {\r\n    NORMAL: 1,\r\n    FLY: 2,\r\n}"
+  ]
+}

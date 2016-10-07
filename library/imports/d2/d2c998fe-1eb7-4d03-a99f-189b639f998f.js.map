@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,UAAE,EAAE;AACA,eAAG,EAAE,aAAU,KAAK,EAAE;AAClB,oBAAI,CAAC,GAAG,GAAG,KAAK,CAAC;aACpB;;AAED,eAAG,EAAE,eAAY;AACb,uBAAO,IAAI,CAAC,GAAG,CAAC;aACnB;SACJ;;AAED,YAAI,EAAE;AACF,eAAG,EAAE,aAAU,KAAK,EAAE;AAClB,oBAAI,CAAC,KAAK,GAAG,KAAK,CAAC;aACtB;;AAED,eAAG,EAAE,eAAY;AACb,uBAAO,IAAI,CAAC,KAAK,CAAC;aACrB;SACJ;;AAED,eAAO,EAAE;AACL,eAAG,EAAE,aAAU,OAAO,EAAE;AACpB,oBAAI,CAAC,QAAQ,GAAG,OAAO,CAAC;aAC3B;;AAED,eAAG,EAAE,eAAY;AACb,uBAAO,IAAI,CAAC,QAAQ,CAAC;aACxB;SACJ;KACJ;;AAED,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,GAAG,GAAG,CAAC,CAAC,CAAC;KACjB;;AAED,SAAK,EAAE,iBAAY;AACf,YAAI,CAAC,OAAO,CAAC,OAAO,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;KACnC;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        id: {\r\n            set: function (value) {\r\n                this._id = value;\r\n            },\r\n            \r\n            get: function () {\r\n                return this._id;\r\n            },\r\n        },\r\n        \r\n        args: {\r\n            set: function (value) {\r\n                this._args = value;\r\n            },\r\n            \r\n            get: function () {\r\n                return this._args;\r\n            },\r\n        },\r\n        \r\n        manager: {\r\n            set: function (manager) {\r\n                this._manager = manager;\r\n            },\r\n            \r\n            get: function () {\r\n                return this._manager;\r\n            },\r\n        }\r\n    },\r\n\r\n    onLoad: function () {\r\n        this._id = -1;\r\n    },\r\n    \r\n    close: function () {\r\n        this.manager.closeUI(this.node);\r\n    },\r\n    \r\n});\r\n"
+  ]
+}

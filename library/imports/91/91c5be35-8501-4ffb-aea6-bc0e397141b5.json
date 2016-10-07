@@ -1,0 +1,98 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "body.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "body_action_attack_1_00": {
+      "__uuid__": "40186ffc-18cf-4e8f-80dd-c7d2f73c3945"
+    },
+    "body_action_attack_1_01": {
+      "__uuid__": "842fb180-32b9-4abd-8460-35c4bc844d47"
+    },
+    "body_action_attack_1_02": {
+      "__uuid__": "6b971c98-5a67-4b43-80e0-b00aa537d735"
+    },
+    "body_action_attack_1_03": {
+      "__uuid__": "f0cbd35a-7b4e-44de-af40-772f26027eb5"
+    },
+    "body_action_attack_2_00": {
+      "__uuid__": "4273b646-ac68-4173-9ccb-e621f890591e"
+    },
+    "body_action_attack_2_01": {
+      "__uuid__": "cdca43ca-c842-4432-af4d-572a059d2c3e"
+    },
+    "body_action_attack_2_02": {
+      "__uuid__": "dab2b86d-d655-4634-9bb5-ce8768bf7b4b"
+    },
+    "body_action_attack_2_03": {
+      "__uuid__": "123da08f-5cf7-482f-97f2-ca48b118fa4f"
+    },
+    "body_action_attack_3_00": {
+      "__uuid__": "71a33a2b-c6f7-41bd-9445-c386a2a93efa"
+    },
+    "body_action_attack_3_01": {
+      "__uuid__": "a6e3ee35-d6b0-4ab0-9932-bd0922177e88"
+    },
+    "body_action_attack_3_02": {
+      "__uuid__": "ce886d43-e522-4a9c-9f56-717f0735b3fe"
+    },
+    "body_action_attack_3_03": {
+      "__uuid__": "aa160901-d06c-45ca-b7e6-6e21227eb8f2"
+    },
+    "body_action_born_00": {
+      "__uuid__": "a4d204a5-e234-4bf3-b1f0-9fb352c9fec1"
+    },
+    "body_action_collapse_00": {
+      "__uuid__": "ba144398-922d-4f74-8d04-63b8a60ba3f3"
+    },
+    "body_action_collapse_02": {
+      "__uuid__": "f9bda58b-6baa-4e5c-be82-5755ec60f5eb"
+    },
+    "body_action_hurt_00": {
+      "__uuid__": "1684c88b-339d-4b28-b75e-b7e4336dcfe8"
+    },
+    "body_action_hurt_01": {
+      "__uuid__": "ce3d4282-5135-4b74-b054-c2d498035527"
+    },
+    "body_action_hurtfall_00": {
+      "__uuid__": "48c95be6-8c60-489d-954e-7225355c9f83"
+    },
+    "body_action_hurtfly_00": {
+      "__uuid__": "095e808a-29bd-4ff3-8c7b-1b613f7e87d8"
+    },
+    "body_action_hurtfly_01": {
+      "__uuid__": "a839a43d-74a1-41b4-8b99-64275709bc86"
+    },
+    "body_action_hurtfly_02": {
+      "__uuid__": "9dd185e2-de93-479c-98ee-69ee916d38da"
+    },
+    "body_action_idle_00": {
+      "__uuid__": "b73bafd7-4b16-4a42-b81e-262d32dd1fa0"
+    },
+    "body_action_run_00": {
+      "__uuid__": "6fa84e34-604a-4ffa-8366-3f37f24cc5f8"
+    },
+    "body_action_run_01": {
+      "__uuid__": "a357de23-36e0-446b-a677-fabe609758fd"
+    },
+    "body_action_run_02": {
+      "__uuid__": "b3b960a8-7c1c-41dd-8811-6b814a4cd269"
+    },
+    "body_action_run_03": {
+      "__uuid__": "6ac2cc3d-7085-49b1-bfaa-0a86aec2a7dc"
+    },
+    "body_action_run_04": {
+      "__uuid__": "b5227f37-2c96-4fd6-b39a-e4546cce47c7"
+    },
+    "body_action_run_05": {
+      "__uuid__": "cc700512-c559-4ebc-8b23-7135357cf1cd"
+    },
+    "body_action_standup_00": {
+      "__uuid__": "49498eae-9ef8-465b-a990-403d8ebeaf54"
+    },
+    "body_action_standup_01": {
+      "__uuid__": "dee9b79c-0e37-453e-981b-5d8b7bf85632"
+    }
+  }
+}

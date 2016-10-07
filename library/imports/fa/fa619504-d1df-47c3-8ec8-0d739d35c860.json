@@ -1,0 +1,32 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "game.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "game_coin_btn_normal": {
+      "__uuid__": "ecfa94f7-2795-4bd3-abcd-1afb93581065"
+    },
+    "game_coin_btn_touch": {
+      "__uuid__": "9991bdc8-cbf3-434c-b201-00a398358390"
+    },
+    "game_physical_btn_normal": {
+      "__uuid__": "0274397a-f705-46d7-90b9-628cbd090180"
+    },
+    "game_physical_btn_touch": {
+      "__uuid__": "57078bd0-ab85-4227-895b-79c2e2fe69dd"
+    },
+    "game_physical_point_bg": {
+      "__uuid__": "3e9788bf-8337-4850-a98a-f96d888f68f5"
+    },
+    "game_physical_point_light": {
+      "__uuid__": "fb6829c6-ca2b-4959-980d-f276dbbcdf0b"
+    },
+    "game_start_btn_normal": {
+      "__uuid__": "f97f2583-1e98-4fb2-8d30-e109d5959379"
+    },
+    "game_start_btn_touch": {
+      "__uuid__": "f3840a8e-8bf7-4c09-8335-176a3c6ac0e5"
+    }
+  }
+}

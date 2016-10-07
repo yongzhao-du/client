@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,YAAI,EAAE;AACF,uBAAS,IAAI;AACb,gBAAI,EAAE,EAAE,CAAC,IAAI;SAChB;;AAED,aAAK,EAAE;AACH,eAAG,EAAE,eAAY;AACb,oBAAI,CAAC,MAAM,CAAC;aACf;;AAED,eAAG,EAAE,aAAU,KAAK,EAAE;AAClB,oBAAI,IAAI,CAAC,MAAM,IAAI,KAAK,EACpB,OAAO;AACX,oBAAI,CAAC,IAAI,CAAC,MAAM,GAAI,KAAK,KAAK,CAAC,AAAC,CAAC;AACjC,oBAAI,CAAC,MAAM,GAAG,KAAK,CAAC;aACvB;SACJ;KACJ;;AAED,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,KAAK,GAAG,CAAC,CAAC;;;KAGlB;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        star: {\r\n            default: null,\r\n            type: cc.Node,\r\n        },\r\n        \r\n        state: {\r\n            get: function () {\r\n                this._state;\r\n            },\r\n            \r\n            set: function (state) {\r\n                if (this._state == state)\r\n                    return;\r\n                this.star.active = (state === 0);\r\n                this._state = state;\r\n            }\r\n        }\r\n    },\r\n\r\n    onLoad: function () {\r\n        this.state = 1;\r\n        //this._animation = this.node.getComponent(cc.Animation);\r\n        //this._animation.on('finish', this.onAnimateFinish, this);\r\n    },\r\n});\r\n"
+  ]
+}

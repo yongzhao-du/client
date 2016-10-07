@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,IAAI,GAAG,OAAO,CAAC,MAAM,CAAC,CAAC;AAC7B,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,KAAK;;AAEjB,cAAU,EAAE;AACR,eAAO,EAAE;AACL,uBAAS,UAAU;AACnB,qBAAS,EAAE,IAAI;AACf,mBAAO,EAAE,qBAAqB;AAC9B,kBAAM,EAAE,kBAAY;AAChB,oBAAI,IAAI,CAAC,OAAO,EAAE;AACd,wBAAI,CAAC,OAAO,CAAC,SAAS,CAAC,IAAI,CAAC,MAAM,CAAC,CAAC;AACpC,wBAAI,CAAC,eAAe,EAAE,CAAC;iBAC1B;aACJ;SACJ;AACD,cAAM,EAAE;AACJ,oBAAQ,EAAE,IAAI;AACd,mBAAO,EAAE,6CAA6C;AACtD,eAAG,EAAE,eAAY;AACb,uBAAO,IAAI,CAAC,CAAC,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;aAC/B;AACD,eAAG,EAAE,aAAU,KAAK,EAAE;AAClB,kBAAE,CAAC,IAAI,CAAC,iDAAiD,CAAC,CAAC;aAC9D;SACJ;KACJ;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "const i18n = require('i18n');\ncc.Class({\n    extends: cc.Label,\n\n    properties: {\n        textKey: {\n            default: 'TEXT_KEY',\n            multiline: true,\n            tooltip: 'Enter i18n key here',\n            notify: function () {\n                if (this._sgNode) {\n                    this._sgNode.setString(this.string);\n                    this._updateNodeSize();\n                }\n            }\n        },\n        string: {\n            override: true,\n            tooltip: 'Here shows the localized string of Text Key',\n            get: function () {\n                return i18n.t(this.textKey);\n            },\n            set: function (value) {\n                cc.warn('Please set label text key in Text Key property.');\n            }\n        },\n    }\n});\n"
+  ]
+}

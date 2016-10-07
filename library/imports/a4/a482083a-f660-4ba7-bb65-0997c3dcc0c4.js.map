@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC,CAAC;AACrC,IAAM,QAAQ,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;;;AAG/B,IAAI,QAAQ,GAAG,IAAI,QAAQ,CAAC,EAAC,OAAO,EAAE,QAAQ,EAAC,CAAC,CAAC;;AAGjD,MAAM,CAAC,OAAO,GAAG;;;;;;;AAOb,QAAI,EAAC,cAAC,QAAQ,EAAE;AACZ,YAAI,IAAI,GAAG,OAAO,CAAC,QAAQ,CAAC,CAAC;AAC7B,gBAAQ,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;KAC1B;;;;;;;;;;;;;;;AAeD,KAAC,EAAC,WAAC,GAAG,EAAE,GAAG,EAAE;AACT,eAAO,QAAQ,CAAC,CAAC,CAAC,GAAG,EAAE,GAAG,CAAC,CAAC;KAC/B;CACJ,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "const Polyglot = require('polyglot');\nconst language = require('zh'); // update this to set your default displaying language in editor\n\n// let polyglot = null;\nlet polyglot = new Polyglot({phrases: language});\n\n\nmodule.exports = {\n    /**\n     * This method allow you to switch language during runtime, language argument should be the same as your data file name \n     * such as when language is 'zh', it will load your 'zh.js' data source.\n     * @method init \n     * @param language - the language specific data file name, such as 'zh' to load 'zh.js'\n     */\n    init (language) {\n        let data = require(language);\n        polyglot.replace(data);\n    },\n    /**\n     * this method takes a text key as input, and return the localized string\n     * Please read https://github.com/airbnb/polyglot.js for details\n     * @method t\n     * @return {String} localized string\n     * @example\n     * \n     * var myText = i18n.t('MY_TEXT_KEY');\n     * \n     * // if your data source is defined as \n     * // {\"hello_name\": \"Hello, %{name}\"}\n     * // you can use the following to interpolate the text \n     * var greetingText = i18n.t('hello_name', {name: 'nantas'}); // Hello, nantas\n     */    \n    t (key, opt) {\n        return polyglot.t(key, opt);\n    }\n};"
+  ]
+}

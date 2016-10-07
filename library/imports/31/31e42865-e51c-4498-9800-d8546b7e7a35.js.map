@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;AACb,cAAU,EAAE;AACR,YAAI,EAAK,CAAC;AACV,UAAE,EAAO,CAAC;AACV,YAAI,EAAK,CAAC;AACV,YAAI,EAAK,CAAC;AACV,aAAK,EAAI,CAAC;AACV,YAAI,EAAK,CAAC;AACV,WAAG,EAAM,CAAC;AACV,cAAM,EAAG,CAAC;AACV,cAAM,EAAG,CAAC;AACV,cAAM,EAAG,CAAC;AACV,cAAM,EAAG,EAAE;AACX,cAAM,EAAG,EAAE;AACX,cAAM,EAAG,EAAE;KACd;CACJ,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\r\n    ControlKey: {\r\n        NONE:    0,\r\n        UP:      1,\r\n        DOWN:    2,\r\n        LEFT:    3,\r\n        RIGHT:   4,\r\n        JUMP:    5,\r\n        HIT:     6,\r\n        SKILL1:  7,\r\n        SKILL2:  8,\r\n        SKILL3:  9,\r\n        SKILL4:  10,\r\n        SKILL5:  11,\r\n        SKILL6:  12,\r\n    }\r\n}\r\n"
+  ]
+}

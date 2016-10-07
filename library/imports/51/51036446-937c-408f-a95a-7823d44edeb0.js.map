@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,SAAM,GAAG,EAAE,CAAC,KAAK,CAAC;;AAE5B,cAAU,EAAE;AACR,aAAK,EAAE;AACH,eAAG,EAAE,eAAY;AACb,uBAAO,IAAI,CAAC,MAAM,CAAC;aACtB;;AAED,eAAG,EAAE,aAAU,KAAK,EAAE;AAClB,oBAAI,CAAC,MAAM,GAAG,KAAK,CAAC,QAAQ,EAAE,CAAC;aAClC;SACJ;KACJ;;AAED,QAAI,EAAE,gBAAY;AACd,YAAI,CAAC,KAAK,EAAE,CAAC;KAChB;;AAED,SAAK,EAAE,iBAAY;AACf,YAAI,CAAC,MAAM,GAAG,EAAE,CAAC;KACpB;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports.class = cc.Class({\r\n    \r\n    properties: {\r\n        token: {\r\n            get: function () {\r\n                return this._token;\r\n            },\r\n            \r\n            set: function (value) {\r\n                this._token = value.toString();\r\n            },\r\n        },\r\n    },\r\n    \r\n    ctor: function () {\r\n        this.reset();\r\n    },\r\n    \r\n    reset: function () {\r\n        this._token = '';\r\n    },\r\n    \r\n});\r\n"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "mission_complete.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "retry_button_01": {
+      "__uuid__": "f1a2b971-3715-4a22-b3c3-be6689b4d966"
+    },
+    "retry_button_02": {
+      "__uuid__": "aeb0a49d-0dfe-4de7-b8b1-ffe5f33f55be"
+    },
+    "retry_button_03": {
+      "__uuid__": "cd893e9a-4e84-465e-b76e-3d3f0984356a"
+    },
+    "victory": {
+      "__uuid__": "86cc5b4a-1c34-4999-a59e-44b59436ecd6"
+    }
+  }
+}

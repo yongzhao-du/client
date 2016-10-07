@@ -1,0 +1,83 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "body.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "body_action_attake_1_00": {
+      "__uuid__": "3e12cca7-ca1d-4b86-95e2-d0995fe6ca46"
+    },
+    "body_action_attake_1_01": {
+      "__uuid__": "075918cc-4cf1-431c-a6a1-b4a37612c9bb"
+    },
+    "body_action_attake_1_02": {
+      "__uuid__": "0df30c5c-70b1-433d-9fbd-5672fb1e032a"
+    },
+    "body_action_born_00": {
+      "__uuid__": "4b58356d-6c63-4411-b94a-619944c6c172"
+    },
+    "body_action_born_01": {
+      "__uuid__": "3ffa5fd5-6e74-405b-99cc-acda7e77d049"
+    },
+    "body_action_collapse_00": {
+      "__uuid__": "297d90ee-3fdb-4bd1-b143-7499021679c8"
+    },
+    "body_action_collapse_01": {
+      "__uuid__": "9e9b2e52-159f-44c6-97b9-3c6c5aaece49"
+    },
+    "body_action_disappear_00": {
+      "__uuid__": "9f959744-4d81-4818-a4cc-e0084fe18798"
+    },
+    "body_action_disappear_01": {
+      "__uuid__": "a61806e2-d10e-48db-bab2-ca51b1a935e9"
+    },
+    "body_action_disappear_02": {
+      "__uuid__": "5f4ba90b-221a-467c-8d40-5ea4e5c4efdc"
+    },
+    "body_action_disappear_03": {
+      "__uuid__": "d7645994-4182-4c48-957d-909cb37be801"
+    },
+    "body_action_disappear_04": {
+      "__uuid__": "08deb793-46c7-4462-9022-722cba23f90f"
+    },
+    "body_action_disappear_05": {
+      "__uuid__": "ca880172-e8f9-42cd-b1fb-f8ada0598df4"
+    },
+    "body_action_disappear_06": {
+      "__uuid__": "7d371450-0795-45c8-b47e-b7c9ce9d3ab9"
+    },
+    "body_action_disappear_07": {
+      "__uuid__": "62acdcca-57f4-462b-b93b-cfa06461d2b6"
+    },
+    "body_action_hurt_00": {
+      "__uuid__": "6e5784a3-bfb8-4049-95e5-ea7dda816bd6"
+    },
+    "body_action_hurtfall_00": {
+      "__uuid__": "b00e29ba-c5b8-439e-8c8f-fa8397d09d3c"
+    },
+    "body_action_hurtfly_00": {
+      "__uuid__": "aa91b719-5551-4168-9ad3-1bbb67d50d7a"
+    },
+    "body_action_hurtfly_01": {
+      "__uuid__": "d830a0aa-be4c-41c7-ae08-870d48da1662"
+    },
+    "body_action_idle_00": {
+      "__uuid__": "6dcff928-7fb4-4002-bd61-30581db169b3"
+    },
+    "body_action_run_00": {
+      "__uuid__": "7c5f4244-a018-4720-9a12-7d00fd67365c"
+    },
+    "body_action_run_01": {
+      "__uuid__": "57c3fd97-e3af-4063-95b6-352366ac8ce9"
+    },
+    "body_action_run_02": {
+      "__uuid__": "6292abc3-c946-40d9-9e8c-5409716e18ff"
+    },
+    "body_action_run_03": {
+      "__uuid__": "6ddc6ae8-9fac-4812-962f-95b0fe171815"
+    },
+    "body_action_standup_00": {
+      "__uuid__": "f5dc6b99-47d8-4112-b293-d3fad5fc9b2a"
+    }
+  }
+}

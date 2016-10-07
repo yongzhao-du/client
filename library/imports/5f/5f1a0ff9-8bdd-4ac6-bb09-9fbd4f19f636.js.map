@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,CAAC,IAAI,GAAG,YAAY;AAC9B,UAAM,CAAC,cAAc,GAAG,OAAO,CAAC,iBAAiB,CAAC,CAAC;AACnD,UAAM,CAAC,aAAa,GAAG,OAAO,CAAC,gBAAgB,CAAC,CAAC;CACpD,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports.exec = function () {\r\n    Global.hurdleProvider = require('hurdle_provider');\r\n    Global.skillProvider = require('skill_provider');\r\n}\r\n"
+  ]
+}

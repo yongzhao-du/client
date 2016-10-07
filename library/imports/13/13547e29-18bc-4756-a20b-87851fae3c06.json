@@ -1,0 +1,65 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "battle.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "attack_button_a": {
+      "__uuid__": "a4d44e5d-8aef-41e1-9a66-a4c354c83f15"
+    },
+    "attack_button_b": {
+      "__uuid__": "4fb78151-7ad1-4dbc-b4a1-b305f4ead735"
+    },
+    "battle_go": {
+      "__uuid__": "bc66c533-63c3-43d8-83e4-f4ec10e0025f"
+    },
+    "battle_round": {
+      "__uuid__": "42a0b7b2-0ba2-422c-a268-0808665da775"
+    },
+    "joy_bg": {
+      "__uuid__": "10e4bb04-1379-475d-8d97-7b1f020df3c4"
+    },
+    "joy_stick": {
+      "__uuid__": "1a622897-94ea-4979-8bca-555ff10efa3a"
+    },
+    "player_hp_alpha": {
+      "__uuid__": "07dcb965-095f-4ced-aa58-ce1b7b2362ae"
+    },
+    "player_hp_bg": {
+      "__uuid__": "bbb7dfa5-74bd-4160-ac6a-ace4cbcd1d88"
+    },
+    "player_hp_light": {
+      "__uuid__": "e9a3c175-94c5-4f2b-9654-1adfd2e5e0ea"
+    },
+    "round_num_0": {
+      "__uuid__": "8a315e04-7ea6-47b4-9d15-d82ddec1d524"
+    },
+    "round_num_1": {
+      "__uuid__": "7e4d254d-581d-4784-a6cd-bbd595ffa6f6"
+    },
+    "round_num_2": {
+      "__uuid__": "89536c9a-23a4-406d-a674-f20c2d2dcd57"
+    },
+    "round_num_3": {
+      "__uuid__": "0731f02a-3298-4750-9c85-9c2dfa7cd471"
+    },
+    "round_num_4": {
+      "__uuid__": "7a1de379-f45a-408d-9346-4468e7b080a1"
+    },
+    "round_num_5": {
+      "__uuid__": "515fc62b-2a10-4488-aec1-6ac48f525e5c"
+    },
+    "round_num_6": {
+      "__uuid__": "89757b8a-6a65-481b-824b-593e3887fa04"
+    },
+    "round_num_7": {
+      "__uuid__": "c0e26742-066c-4585-9254-5929b5d74fb9"
+    },
+    "round_num_8": {
+      "__uuid__": "b4485d27-a4e5-4d21-9856-9a2db2ef98ad"
+    },
+    "round_num_9": {
+      "__uuid__": "21ac4557-e528-44ff-90cf-2125f24add46"
+    }
+  }
+}

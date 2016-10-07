@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "game_physical_point_light",
+    "texture": "bb074a33-8e09-4c0d-9bf7-092b9b26bb74",
+    "atlas": "fa619504-d1df-47c3-8ec8-0d739d35c860",
+    "rect": [
+      45,
+      439,
+      50,
+      27
+    ],
+    "offset": [
+      0,
+      8
+    ],
+    "originalSize": [
+      52,
+      43
+    ],
+    "rotated": 1
+  }
+}

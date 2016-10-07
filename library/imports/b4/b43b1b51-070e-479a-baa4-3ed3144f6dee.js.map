@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,SAAM,GAAG,EAAE,CAAC,KAAK,CAAC;AAC5B,QAAI,EAAE,gBAAY;AACd,YAAI,CAAC,KAAK,GAAG,CAAC,CAAC;AACf,YAAI,CAAC,UAAU,GAAG,CAAC,CAAC;KACvB;;AAED,SAAK,EAAE,iBAAY;AACf,YAAI,CAAC,KAAK,GAAG,CAAC,CAAC;AACf,YAAI,CAAC,UAAU,GAAG,CAAC,CAAC;KACvB;;AAED,UAAM,EAAE,gBAAU,EAAE,EAAE;AAClB,YAAI,CAAC,KAAK,IAAI,EAAE,CAAC;AACjB,YAAI,CAAC,UAAU,IAAI,EAAE,CAAC;KACzB;;AAED,YAAQ,EAAE,oBAAY;AAClB,eAAO,IAAI,CAAC,KAAK,CAAC;KACrB;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports.class = cc.Class({\r\n    ctor: function () {\r\n        this._tick = 0;\r\n        this._orginTick = 0;\r\n    },\r\n\r\n    reset: function () {\r\n        this._tick = 0;\r\n        this._orginTick = 0;\r\n    },\r\n\r\n    update: function (dt) {\r\n        this._tick += dt;\r\n        this._orginTick += dt;\r\n    },\r\n    \r\n    getTimer: function () {\r\n        return this._tick;\r\n    },\r\n});\r\n\r\n"
+  ]
+}

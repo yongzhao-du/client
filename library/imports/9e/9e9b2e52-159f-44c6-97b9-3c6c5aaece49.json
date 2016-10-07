@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "body_action_collapse_01",
+    "texture": "97237eb7-9409-4860-8cd4-c0bb4cd26f8d",
+    "atlas": "06db323d-aa3a-4285-810c-00069516679b",
+    "rect": [
+      2,
+      581,
+      170,
+      65
+    ],
+    "offset": [
+      4,
+      -21
+    ],
+    "originalSize": [
+      200,
+      107
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "body_action_disappear_00",
+    "texture": "97237eb7-9409-4860-8cd4-c0bb4cd26f8d",
+    "atlas": "06db323d-aa3a-4285-810c-00069516679b",
+    "rect": [
+      174,
+      592,
+      170,
+      64
+    ],
+    "offset": [
+      -2,
+      -3
+    ],
+    "originalSize": [
+      228,
+      182
+    ]
+  }
+}

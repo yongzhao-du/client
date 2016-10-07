@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,GAAG,GAAG,OAAO,CAAC,WAAW,CAAC,CAAC,IAAI,CAAC;;AAEtC,MAAM,CAAC,OAAO,GAAG;AACb,aAAS,EAAE,mBAAU,EAAE,EAAE;AACrB,eAAO,GAAG,CAAC,EAAE,CAAC,CAAC;KAClB;CACJ,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "const cfg = require('skill_cfg').data;\r\n\r\nmodule.exports = {\r\n    getConfig: function (id) {\r\n        return cfg[id];\r\n    },\r\n}\r\n"
+  ]
+}

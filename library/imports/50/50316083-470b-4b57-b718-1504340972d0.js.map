@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;;AAEb,aAAS,EAAE,mBAAU,IAAI,EAAE;AACvB,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC;;;;KAI/B;;CAEJ,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\r\n    \r\n    loadScene: function (name) {\r\n        cc.director.loadScene(name);\r\n        /*cc.director.preloadScene(name, function () {\r\n            cc.director.loadScene(name);\r\n        });*/\r\n    },\r\n    \r\n}\r\n"
+  ]
+}

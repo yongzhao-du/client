@@ -1,0 +1,17 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "7.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "effect_7_frame_00": {
+      "__uuid__": "79a8c951-13c0-4b21-9a8f-b023661b2b10"
+    },
+    "effect_7_frame_01": {
+      "__uuid__": "ce417ff0-82a8-4cfb-a9b9-3ab0331bb710"
+    },
+    "effect_7_frame_02": {
+      "__uuid__": "2a196d33-14ee-4a47-8a1f-7abd71a6ad81"
+    }
+  }
+}

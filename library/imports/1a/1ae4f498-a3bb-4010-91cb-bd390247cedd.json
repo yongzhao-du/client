@@ -1,0 +1,32 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "hurt_fall",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.016666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "48c95be6-8c60-489d-954e-7225355c9f83"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "comps": {
+      "cc.BoxCollider": {}
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "mission_fail.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "fail": {
+      "__uuid__": "eb04376f-a4c2-4285-a7ba-131c9f2e1897"
+    },
+    "fail_relive_btn_normal": {
+      "__uuid__": "b6909c20-b58d-4b13-9200-47cd671b8ace"
+    },
+    "fail_relive_btn_touch": {
+      "__uuid__": "12798de8-f145-4cb9-866f-c913696bfd30"
+    },
+    "fail_return_btn_normal": {
+      "__uuid__": "80566e67-e572-42bd-913a-77e5df0d913b"
+    },
+    "fail_return_btn_touch": {
+      "__uuid__": "cd569e78-09a6-45a1-8998-5c174ba69d01"
+    }
+  }
+}

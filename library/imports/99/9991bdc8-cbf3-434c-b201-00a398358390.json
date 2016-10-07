@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "game_coin_btn_touch",
+    "texture": "bb074a33-8e09-4c0d-9bf7-092b9b26bb74",
+    "atlas": "fa619504-d1df-47c3-8ec8-0d739d35c860",
+    "rect": [
+      195,
+      399,
+      84,
+      82
+    ],
+    "offset": [
+      -3,
+      0
+    ],
+    "originalSize": [
+      90,
+      86
+    ],
+    "rotated": 1
+  }
+}

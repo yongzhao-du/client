@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "body_action_run_03",
+    "texture": "97237eb7-9409-4860-8cd4-c0bb4cd26f8d",
+    "atlas": "06db323d-aa3a-4285-810c-00069516679b",
+    "rect": [
+      182,
+      492,
+      98,
+      170
+    ],
+    "offset": [
+      -6,
+      -5
+    ],
+    "originalSize": [
+      172,
+      180
+    ],
+    "rotated": 1
+  }
+}

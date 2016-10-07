@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,WAAW,GAAG,OAAO,CAAC,cAAc,CAAC,SAAM,CAAC;AAClD,IAAM,aAAa,GAAG,OAAO,CAAC,gBAAgB,CAAC,SAAM,CAAC;;AAEtD,MAAM,CAAC,OAAO,CAAC,IAAI,GAAG,YAAY;AAC9B,UAAM,CAAC,WAAW,GAAG,IAAI,WAAW,EAAE,CAAC;AACvC,UAAM,CAAC,aAAa,GAAG,IAAI,aAAa,EAAE,CAAC;CAC9C,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "const LoginModule = require('login_module').class;\r\nconst AccountModule = require('account_module').class;\r\n\r\nmodule.exports.exec = function () {\r\n    Global.loginModule = new LoginModule();\r\n    Global.accountModule = new AccountModule();\r\n}\r\n"
+  ]
+}

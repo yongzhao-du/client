@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,SAAS,QAAQ,CAAE,KAAK,EAAE;AACtB,WAAO,KAAK,GAAG,CAAC,GAAG,KAAK,CAAC,QAAQ,EAAE,GAAG,GAAG,GAAG,KAAK,CAAC,QAAQ,EAAE,CAAC;CAChE;;AAED,MAAM,CAAC,OAAO,GAAG;;AAEb,WAAO,EAAE,iBAAU,GAAG,EAAE;AACpB,YAAI,CAAC,GAAG,GAAG,GAAG,EAAE,CAAC;AACjB,YAAI,CAAC,GAAG,CAAC,GAAG,GAAG,CAAC,CAAA,GAAI,EAAE,CAAC;AAC7B,YAAI,GAAG,GAAG,EAAE,CAAC,EAAE,CAAC,SAAS,CAAC,OAAO,EAAE,QAAQ,CAAC,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7D,eAAO,GAAG,CAAC;KACR;;AAED,YAAQ,EAAE,kBAAU,GAAG,EAAE;AACrB,YAAI,CAAC,GAAG,GAAG,GAAG,IAAI,CAAC;AACzB,YAAI,CAAC,GAAG,CAAC,GAAG,GAAG,CAAC,CAAA,GAAI,IAAI,CAAC;AACzB,YAAI,CAAC,GAAG,CAAC,GAAG,EAAE,CAAC;AACf,YAAI,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAA,GAAI,EAAE,CAAC;AACrB,YAAI,GAAG,GAAG,EAAE,CAAC,EAAE,CAAC,SAAS,CAAC,UAAU,EAAE,QAAQ,CAAC,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAA;AAC5E,eAAO,GAAG,CAAA;KACP;;CAEJ,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "function fillZero (value) {\r\n    return value > 9 ? value.toString() : '0' + value.toString();\r\n}\r\n\r\nmodule.exports = {\r\n    \r\n    secToMS: function (sec) {\r\n        var s = sec % 60;\r\n        var m = (sec - s) / 60;\r\n\t\tvar ret = cc.js.formatStr(\"%s:%s\", fillZero(m), fillZero(s));\r\n\t\treturn ret;\r\n    },\r\n    \r\n    secToHMS: function (sec) {\r\n        var t = sec % 3600;\r\n\t\tvar h = (sec - t) / 3600;\r\n\t\tvar s = t % 60;\r\n\t\tvar m = (t - s) / 60;\r\n\t\tvar ret = cc.js.formatStr(\"%s:%s:%s\", fillZero(h), fillZero(m), fillZero(s))\r\n\t\treturn ret\r\n    },\r\n    \r\n}\r\n"
+  ]
+}

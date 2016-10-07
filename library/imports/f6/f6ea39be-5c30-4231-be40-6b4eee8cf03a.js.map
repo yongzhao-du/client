@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;AACb,aAAS,EAAE,OAAO;AAClB,qBAAiB,EAAE,QAAQ;AAC3B,qBAAiB,EAAE,QAAQ;AAC3B,oBAAgB,EAAE,eAAe;AACjC,mBAAe,EAAE,SAAS;AAC1B,mBAAe,EAAE,QAAQ;AACzB,oBAAgB,EAAE,OAAO;AACzB,oBAAgB,EAAE,oBAAoB;AACtC,kBAAc,EAAE,IAAI;AACpB,eAAW,EAAE,IAAI;AACjB,kBAAc,EAAE,IAAI;AACpB,iBAAa,EAAE,UAAU;AACzB,uBAAmB,EAAE,QAAQ;AAC7B,sBAAkB,EAAE,QAAQ;AAC5B,qBAAiB,EAAE,WAAW;AAC9B,sBAAkB,EAAE,OAAO;AAC3B,2BAAuB,EAAE,kBAAkB;CAC9C,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\n    \"GW_GAME\": \"盖付通游戏\",\n    \"checking_update\": \"正在检查更新\",\n    \"updating_assets\": \"正在更新资源\",\n    \"loading_assets\": \"正在加载资源，不用流量喔！\",\n    \"initting_game\": \"正在初始化游戏\",\n    \"entering_game\": \"正在进入游戏\",\n    \"update_percent\": \"更新进度：\",\n    \"confirm_update\": \"发现在新版本，你需要更新才能继续游戏\",\n    \"start_update\": \"更新\",\n    \"exit_game\": \"退出\",\n    \"retry_update\": \"重试\",\n    \"fail_update\": \"更新失败，请重试\",\n    \"account_not_empty\": \"帐号不能为空\",\n    \"passwd_not_empty\": \"密码不能为空\",\n    \"exchange_format\": \"%d积分=%d金币\",\n    \"own_point_format\": \"积分：%d\",\n    \"confirm_exchange_coin\": \"确定使用%d积分兑换%d金币吗？\",\n}"
+  ]
+}

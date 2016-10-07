@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "loading.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "loading_1": {
+      "__uuid__": "438a3281-574d-4eac-9d2d-f2953a583993"
+    },
+    "loading_2": {
+      "__uuid__": "3d625ce9-0b42-4311-b1ab-3eba57f6040e"
+    },
+    "loading_3": {
+      "__uuid__": "52d229cf-162c-49f3-9e9d-86d0cf080ea9"
+    },
+    "loading_4": {
+      "__uuid__": "aafa4b24-51f8-48da-9dfa-a89fc4f582ec"
+    }
+  }
+}

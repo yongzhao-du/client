@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "ui_0.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "button_0_normal": {
+      "__uuid__": "c44bfadb-181d-4de0-a94d-7f2dd7fa7d31"
+    },
+    "button_0_touch": {
+      "__uuid__": "4735e808-8a9f-4889-bbd6-ebeb28eeefcd"
+    },
+    "button_1_normal": {
+      "__uuid__": "09689bfd-d348-4171-8b7f-4b11646d1fb5"
+    },
+    "button_1_touch": {
+      "__uuid__": "22daa35d-41af-48cd-bc32-40f1027f4eb5"
+    },
+    "dialog_0": {
+      "__uuid__": "16f18861-e46e-46d9-b931-f2f38fa00a53"
+    },
+    "loading_0_bar": {
+      "__uuid__": "ba10759c-25b2-4750-adb0-a91c3b4be0fb"
+    },
+    "loading_0_bg": {
+      "__uuid__": "d7a580bb-b1b9-4f6a-87eb-60b8e55c842c"
+    },
+    "loading_1_bar": {
+      "__uuid__": "f6369a6d-829e-4e09-b12c-bc8f2ad1495e"
+    },
+    "loading_1_bg": {
+      "__uuid__": "dfe94e92-1956-4e54-8852-ac68eb2f1a06"
+    }
+  }
+}

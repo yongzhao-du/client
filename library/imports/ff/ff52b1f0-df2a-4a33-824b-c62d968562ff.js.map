@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;AACb,kBAAc,EAAE;AACZ,YAAI,EAAE,CAAC,CAAC;AACR,aAAK,EAAE,CAAC;KACX;;AAED,eAAW,EAAE;AACT,YAAI,EAAE,CAAC;AACP,cAAM,EAAE,CAAC;AACT,WAAG,EAAE,CAAC;AACN,cAAM,EAAE,CAAC;AACT,YAAI,EAAE,CAAC;AACP,gBAAQ,EAAE,CAAC;AACX,iBAAS,EAAE,CAAC;AACZ,gBAAQ,EAAE,CAAC;AACX,eAAO,EAAE,CAAC;AACV,YAAI,EAAE,CAAC;AACP,iBAAS,EAAE,EAAE;AACb,cAAM,EAAE,EAAE;KACb;;AAED,cAAU,EAAE,CACR,MAAM,EACN,QAAQ,EACR,KAAK,EACL,SAAS,EACT,MAAM,EACN,UAAU,EACV,WAAW,EACX,UAAU,EACV,SAAS,EACT,MAAM,EACN,WAAW,EACX,QAAQ,CACX;;AAED,mBAAe,EAAE;AACb,YAAI,EAAE,CAAC;AACP,WAAG,EAAE,CAAC;AACN,gBAAQ,EAAE,CAAC;AACX,gBAAQ,EAAE,CAAC;AACX,gBAAQ,EAAE,CAAC;AACX,YAAI,EAAE,CAAC;AACP,gBAAQ,EAAE,CAAC;AACX,iBAAS,EAAE,CAAC;AACZ,gBAAQ,EAAE,CAAC;AACX,eAAO,EAAE,CAAC;AACV,YAAI,EAAE,EAAE;AACR,iBAAS,EAAE,EAAE;AACb,cAAM,EAAE,EAAE;KACb;;AAED,sBAAkB,EAAE;AAChB,mBAAW,EAAE,CAAC;AACd,qBAAa,EAAE,CAAC;AAChB,iBAAS,EAAE,CAAC;KACf;CACJ,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\r\n    ActorDirection: {\r\n        LEFT: -1,\r\n        RIGHT: 1,\r\n    },\r\n    \r\n    ActorAction: {\r\n        IDLE: 0,\r\n        PRERUN: 1,\r\n        RUN: 2,\r\n        ATTACK: 3,\r\n        HURT: 4,\r\n        HURT_FLY: 5,\r\n        HURT_FALL: 6,\r\n        COLLAPSE: 7,\r\n        RECOVER: 8,\r\n        BORN: 9,\r\n        DISAPPEAR: 10,\r\n        RELIVE: 11,\r\n    },\r\n    \r\n    ActionName: [\r\n        \"idle\",\r\n        \"prerun\",\r\n        \"run\",\r\n        \"attack_\",\r\n        \"hurt\",\r\n        \"hurt_fly\",\r\n        \"hurt_fall\",\r\n        \"collapse\",\r\n        \"standup\",\r\n        \"born\",\r\n        \"disappear\",\r\n        \"relive\",\r\n    ],\r\n    \r\n    ActionClipIndex: {\r\n        IDLE: 0,\r\n        RUN: 1,\r\n        ATTACK_1: 2,\r\n        ATTACK_2: 3,\r\n        ATTACK_3: 4,\r\n        HURT: 5,\r\n        HURT_FLY: 6,\r\n        HURT_FALL: 7,\r\n        COLLAPSE: 8,\r\n        RECOVER: 9,\r\n        BORN: 10,\r\n        DISAPPEAR: 11,\r\n        RELIVE: 12,\r\n    },\r\n    \r\n    ActionCompleteType: {\r\n        COMPLETABLE: 0,\r\n        UNCOMPLETABLE: 1,\r\n        BREAKABLE: 2,\r\n    }\r\n}"
+  ]
+}
