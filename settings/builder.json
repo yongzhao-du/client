@@ -1,0 +1,19 @@
+{
+  "excludeScenes": [
+    "7c59455d-61f7-4269-8bc0-2fce605cc47a"
+  ],
+  "includeAnysdk": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.client",
+  "startScene": "93a6a7bf-8169-4879-b7c9-919380d3b075",
+  "title": "client",
+  "webOrientation": "landscape"
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bb074a33-8e09-4c0d-9bf7-092b9b26bb74",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game": {
+      "ver": "1.0.3",
+      "uuid": "1749d5a3-049d-4864-abf7-0829e35d6c6d",
+      "rawTextureUuid": "bb074a33-8e09-4c0d-9bf7-092b9b26bb74",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -107,
+      "offsetY": 9.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 294,
+      "height": 489,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

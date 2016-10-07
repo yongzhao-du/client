@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "round_img",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "round_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "round_container/round_shock/battle_round": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 2
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 2
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "round_container/round_shock": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": -5
+            },
+            {
+              "frame": 0.5,
+              "value": 10
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": -5
+            },
+            {
+              "frame": 0.5,
+              "value": 10
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}
