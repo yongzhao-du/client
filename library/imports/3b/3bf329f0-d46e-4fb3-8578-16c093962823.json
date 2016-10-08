@@ -6,5 +6,8 @@
     "raw-bitmap-font.fnt",
     "time_number_0.png"
   ],
+  "texture": {
+    "__uuid__": "64190978-1c9b-44fa-b9f5-2e730a3d5a05"
+  },
   "fontSize": 32
 }

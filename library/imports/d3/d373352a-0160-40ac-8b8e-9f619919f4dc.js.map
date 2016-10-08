@@ -7,6 +7,6 @@
   "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;AACb,aAAS,EAAE,SAAS;CACvB,CAAA",
   "file": "unknown",
   "sourcesContent": [
-    "module.exports = {\n    \"GW_GAME\": \"GW Game\",\n}"
+    "module.exports = {\r\n    \"GW_GAME\": \"GW Game\",\r\n}"
   ]
 }

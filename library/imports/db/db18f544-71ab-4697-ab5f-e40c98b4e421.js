@@ -25,7 +25,8 @@ cc.Class({
         if (Global.accountModule.goldNum < 50) {
             this._uiCtrl.manager.openUI('coin_not_enough');
         } else {
-            cc.log('buy physical');
+            this._uiCtrl.close();
+            GameRpc.Clt2Srv.buyFullPhysical();
         }
     },
 

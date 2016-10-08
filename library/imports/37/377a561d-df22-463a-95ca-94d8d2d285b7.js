@@ -18,6 +18,13 @@ cc.Class({
 
         this.rateLabel.string = cc.js.formatStr(GameLang.t('exchange_format'), 1, this._exchangeRate);
         this.ownLabel.string = cc.js.formatStr(GameLang.t('own_point_format'), this._ownPoint);
+
+        this._exchangeHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_EXCHANGE_GOLD, this.onExchangeSuccess.bind(this));
+    },
+
+    onDestroy: function onDestroy() {
+        Global.gameEventDispatcher.removeEventHandler(this._exchangeHandler);
+        this._exchangeHandler = null;
     },
 
     start: function start() {
@@ -40,6 +47,10 @@ cc.Class({
         }
     },
 
+    onExchangeSuccess: function onExchangeSuccess(event) {
+        this._uiCtrl.close();
+    },
+
     onItemExchangeButtonClick: function onItemExchangeButtonClick(event) {
         var self = this;
         var target = event.target;
@@ -49,8 +60,7 @@ cc.Class({
             message: cc.js.formatStr(GameLang.t('confirm_exchange_coin'), point, coin),
             callback: function callback(buttonId) {
                 if (buttonId === 0) {
-                    self._uiCtrl.close();
-                    cc.log('exchange coin', coin);
+                    GameRpc.Clt2Srv.exchangeGold(coin);
                 }
             }
         };

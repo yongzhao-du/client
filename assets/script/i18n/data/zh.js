@@ -16,4 +16,6 @@ module.exports = {
     "exchange_format": "%d积分=%d金币",
     "own_point_format": "积分：%d",
     "confirm_exchange_coin": "确定使用%d积分兑换%d金币吗？",
+    "exchange_success": "兑换成功",
+    "buy_physical_success": "购买体力成功",
 }

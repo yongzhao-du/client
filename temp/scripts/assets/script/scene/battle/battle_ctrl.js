@@ -13,6 +13,8 @@ var HurdleLoadBit = {
     MAP: 0x0001
 };
 
+var defaultRetryCount = 3;
+
 cc.Class({
     "extends": cc.Component,
 
@@ -35,6 +37,7 @@ cc.Class({
         manager.enabledDebugDraw = false;
 
         this._uiManager = this.node.getComponent('ui_manager');
+        this._retryCount = defaultRetryCount;
 
         // 控制相关
         this._roundBar = this.roundBar.getComponent('round_ctrl');
@@ -78,7 +81,7 @@ cc.Class({
         cc.eventManager.addListener(this._listener, this.node);
 
         // 来自失败窗口，复活按钮
-        this._reliveHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_RETRY_GAME, this.onRetryGame.bind(this));
+        this._reliveHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_BUY_TIME_TO_PLAY, this.onRetryGame.bind(this));
         this._returnHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_RETURN_GAME, this.onReturnEvent.bind(this));
     },
 
@@ -87,6 +90,9 @@ cc.Class({
         Global.gameEventDispatcher.removeEventHandler(this._returnHandler);
         this._reliveHandler = null;
         this._returnHandler = null;
+
+        cc.audioEngine.stopMusic(true);
+
         // 不能这样做，destroy时所有listener已移除
         //cc.eventManager.removeListener(this._listener);
     },
@@ -136,7 +142,7 @@ cc.Class({
     },
 
     onRetryGame: function onRetryGame() {
-        //this.changeHurdle(this._currHurdleId);
+        this._retryCount--;
         this._player.relive();
     },
 
@@ -188,6 +194,7 @@ cc.Class({
         this._isFinish = false;
         this._roundNum = 0;
         this.roundBar.active = false;
+        this._retryCount = defaultRetryCount;
     },
 
     initMission: function initMission() {
@@ -415,7 +422,7 @@ cc.Class({
         } else {
             if (!this._isFail) {
                 this._isFail = true;
-                this._uiManager.openUI('mission_fail');
+                this._uiManager.openUI('mission_fail', { retryCount: this._retryCount });
                 return;
             }
         }

@@ -572,7 +572,7 @@ cc.Class({
             // 已完成或可完成
             case ActionCompleteType.COMPLETABLE:
                 if (this === this._logicManager.getPlayer()) {
-                    cc.log('abc');
+                    //cc.log('abc');
                 }
                 if (this._currAction == ActorAction.DISAPPEAR) {
                     this._logicManager.removeEnity(this);

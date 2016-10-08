@@ -51,12 +51,21 @@ cc.Class({
             this.onCountDown();
         }
         
+        this._startHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_START_GAME, this.onStartGame.bind(this));
         this._getGameDataHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_GET_GAME_DATA, this.onGetGameData.bind(this));
+        this._exchangeHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_EXCHANGE_GOLD, this.onExchangeCoin.bind(this));
+        this._buyPhysicalHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_BUY_PHYSICAL, this.onBuyFullPhysical.bind(this));
     },
     
     onDestroy: function () {
+        Global.gameEventDispatcher.removeEventHandler(this._startHandler);
         Global.gameEventDispatcher.removeEventHandler(this._getGameDataHandler);
+        Global.gameEventDispatcher.removeEventHandler(this._exchangeHandler);
+        Global.gameEventDispatcher.removeEventHandler(this._buyPhysicalHandler);
+        this._buyPhysicalHandler = null;
         this._getGameDataHandler = null;
+        this._exchangeHandler = null;
+        this._startHandler = null;
     },
     
     start: function () {
@@ -112,8 +121,7 @@ cc.Class({
     },
     
     onAddCoinButtonClick: function () {
-        //this._uiManager.openUI('exchange_coin');
-        this._uiManager.openUI('physical_not_enough');
+        this._uiManager.openUI('exchange_coin');
     },
     
     onCountDown: function () {
@@ -131,19 +139,56 @@ cc.Class({
         this.updateCountDown();
     },
     
+    onBuyFullPhysical: function () {
+        this.coinLabel.string = Global.accountModule.goldNum;
+        this._physical = Global.accountModule.power;
+        this.updatePhysical();
+        this.resetCountDown();
+    },
+
+    onExchangeCoin: function () {
+        this.coinLabel.string = Global.accountModule.goldNum;
+    },
+
     onGetGameData: function () {     
         this.coinLabel.string = Global.accountModule.goldNum;
         this._physical = Global.accountModule.power;
         this.updatePhysical();
         this.resetCountDown();
     },
+
+    onStartGame: function () {
+        GameUtil.loadScene('battle');
+    },
     
     onPlayButtonClick: function () {
         if (this.costPhysical()) {
             this.stopCountDown();
-            GameUtil.loadScene('battle');
+            GameRpc.Clt2Srv.startGame();
         } else {
-            // 体力不足
+            this._uiManager.openUI('physical_not_enough');
+        }
+    },
+    
+    onRegisteButtonClick: function () {
+        if (cc.sys.isMobile) {
+            if (cc.sys.platform == cc.sys.ANDROID) {
+                var className = "org/cocos2dx/javascript/AppActivity";
+                var methodName = "quickRegister";
+                var methodSignature = "()V";
+                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+            }
+        }
+    },
+    
+    onForgetButtonClick: function () {
+        if (cc.sys.isMobile) {
+            if (cc.sys.platform == cc.sys.ANDROID) {
+                var className = "org/cocos2dx/javascript/AppActivity";
+                var methodName = "quickRegister";
+                var methodSignature = "()V";
+                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+            }
         }
     },
 });

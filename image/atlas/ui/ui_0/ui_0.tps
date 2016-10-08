@@ -155,6 +155,8 @@
             <filename>button_1_normal.png</filename>
             <filename>button_1_touch.png</filename>
             <filename>loading_1_bg.png</filename>
+            <filename>close_button_0_touch.png</filename>
+            <filename>close_button_0_normal.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

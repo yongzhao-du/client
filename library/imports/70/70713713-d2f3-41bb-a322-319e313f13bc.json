@@ -16,6 +16,12 @@
     "button_1_touch": {
       "__uuid__": "22daa35d-41af-48cd-bc32-40f1027f4eb5"
     },
+    "close_button_0_normal": {
+      "__uuid__": "fc9af526-f872-4f46-a4aa-99f3e2d0f8b5"
+    },
+    "close_button_0_touch": {
+      "__uuid__": "12141803-7a6c-41d7-9fd0-265635597cae"
+    },
     "dialog_0": {
       "__uuid__": "16f18861-e46e-46d9-b931-f2f38fa00a53"
     },

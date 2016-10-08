@@ -30,6 +30,7 @@ var Srv2Clt = {
             Global.accountModule.goldNum = json.data.goldNum;
 	        Global.accountModule.scoreNum = json.data.scoreNum;
 	        Global.gameEventDispatcher.emit(GameEvent.ON_EXCHANGE_GOLD);
+            Global.gameEventDispatcher.emit(GameEvent.ON_FLOAT_MESSAGE, GameLang.t('exchange_success'));
         } else {
             Global.gameEventDispatcher.emit(GameEvent.ON_FLOAT_MESSAGE, json.data.errorMsg);
         }
@@ -54,6 +55,7 @@ var Srv2Clt = {
 	        Global.accountModule.power = json.data.power;
 	        Global.accountModule.nextPowerTime = json.data.nextPowerTime;
 	        Global.gameEventDispatcher.emit(GameEvent.ON_BUY_PHYSICAL);
+            Global.gameEventDispatcher.emit(GameEvent.ON_FLOAT_MESSAGE, GameLang.t('buy_physical_success'));
         } else {
             Global.gameEventDispatcher.emit(GameEvent.ON_FLOAT_MESSAGE, json.data.errorMsg);
         }
@@ -125,6 +127,7 @@ var Clt2Srv = {
     },
     
     buyTimeToPlayGame: function (times) {
+        cc.log('buyTimeToPlayGame', times);
 		Global.gameNet.httpRequest({
 		    type: Global.gameType,
 			gameMsgId: GameProtocol.Protocol.CONTINUE_GAME,

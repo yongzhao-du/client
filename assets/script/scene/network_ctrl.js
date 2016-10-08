@@ -68,6 +68,7 @@ cc.Class({
     removeLoading: function () {
         if (this._loadingPanel) {
             this._loadingPanel.removeFromParent();
+            //this._loadingPanel.destroy();
             this._loadingPanel = null;
         }
     }
