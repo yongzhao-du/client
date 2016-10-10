@@ -72,7 +72,7 @@ cc.Class({
         var keys = [];
         for (var k in list) {
             keys.push(k);
-            cc.loader.loadRes('prefab/ui/login/account_item', cc.Prefab, function (err, prefab) {
+            cc.loader.loadRes('prefab/ui/components/account_item', cc.Prefab, function (err, prefab) {
                 var node = cc.instantiate(prefab);
                 var button = node.getChildByName('button');
                 var label = node.getChildByName('name_label').getComponent(cc.Label);
@@ -125,11 +125,21 @@ cc.Class({
     },
 
     onRegisteButtonClick: function onRegisteButtonClick() {
-        cc.log("registe");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     },
 
     onForgetButtonClick: function onForgetButtonClick() {
-        cc.log("forget");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     }
 
 });

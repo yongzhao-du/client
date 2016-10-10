@@ -26,7 +26,7 @@ cc.Class({
         accountScrollView: {
             default: null,
             type: cc.ScrollView,
-        }
+        },
     },
 
     onLoad: function () {
@@ -122,11 +122,21 @@ cc.Class({
     },
     
     onRegisteButtonClick: function () {
-        cc.log("registe");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     },
     
     onForgetButtonClick: function () {
-        cc.log("forget");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     },
     
 });

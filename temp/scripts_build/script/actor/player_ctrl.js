@@ -76,6 +76,11 @@ cc.Class({
         if (this._stateBar) this._stateBar.setHp(this._hp, this._hpMax, false);
     },
 
+    setHp: function setHp(value, max) {
+        this._super(value, max);
+        if (this._stateBar) this._stateBar.setHp(this._hp, this._hpMax, false);
+    },
+
     setActorPosition: function setActorPosition(x, y) {
         this._super(x, y);
         this._map.setMapPosition(x, y);
@@ -151,14 +156,21 @@ cc.Class({
                 this._postureBreakEndTime = 0;
                 this._lastAttackPostureIndex = 0;
             } else {
-                this._lastAttackPostureIndex++;
+                if (!this._lastHitResult) {
+                    this._lastAttackPostureIndex = 0;
+                } else {
+                    this._lastAttackPostureIndex++;
+                }
                 if (!this.getNormalAttackPosture(this._lastAttackPostureIndex)) {
                     this._lastAttackPostureIndex = 0;
                 }
             }
             //cc.log("last index" + this._lastAttackPostureIndex);
             var posture = this.getNormalAttackPosture(this._lastAttackPostureIndex);
-            if (!posture) return null;
+            if (!posture) {
+                this._lastHitResult = false;
+                return null;
+            }
             this._postureBreakEndTime = currTime + posture.time + 0.2;
             return posture;
         } else {}

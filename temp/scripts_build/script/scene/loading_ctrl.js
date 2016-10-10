@@ -320,7 +320,7 @@ cc.Class({
     },
 
     enterGame: function enterGame() {
-        GameUtil.loadScene("battle");
+        GameUtil.loadScene("login");
     },
 
     showUpdatePanel: function showUpdatePanel(type) {

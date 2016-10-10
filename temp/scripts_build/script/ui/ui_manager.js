@@ -16,7 +16,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-        this._table = []; //new BufferTable();
+        this._table = [];
     },
 
     openUI: function openUI(name, args) {
@@ -29,7 +29,6 @@ cc.Class({
             ctrl.args = args;
             ctrl.manager = self;
             self.uiContainer.addChild(node);
-            ctrl.playAnimate(0);
         });
     },
 

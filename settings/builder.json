@@ -12,7 +12,7 @@
     "portrait": false,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.client",
+  "packageName": "com.gaiwang.gai_fight",
   "startScene": "93a6a7bf-8169-4879-b7c9-919380d3b075",
   "title": "client",
   "webOrientation": "landscape"

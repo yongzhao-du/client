@@ -74,7 +74,12 @@ cc.Class({
     
     resetCountDown: function () {
         this.stopCountDown();
-        this.startCountDown(Global.accountModule.nextPowerTime);
+        if (this._physical < this.maxPhysical) {
+            this.countDownLabel.node.active = true;
+            this.startCountDown(Global.accountModule.nextPowerTime);
+        } else {
+            this.countDownLabel.node.active = false;
+        }
     },
     
     startCountDown: function (time) {
@@ -104,7 +109,7 @@ cc.Class({
         for (; i < this.maxPhysical; i++)
             this._physicalPoints[i].state = 1;
     },
-    
+
     chargePhysical: function () {
         if (this._physical >= this.maxPhysical)
             return;
@@ -170,25 +175,4 @@ cc.Class({
         }
     },
     
-    onRegisteButtonClick: function () {
-        if (cc.sys.isMobile) {
-            if (cc.sys.platform == cc.sys.ANDROID) {
-                var className = "org/cocos2dx/javascript/AppActivity";
-                var methodName = "quickRegister";
-                var methodSignature = "()V";
-                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-            }
-        }
-    },
-    
-    onForgetButtonClick: function () {
-        if (cc.sys.isMobile) {
-            if (cc.sys.platform == cc.sys.ANDROID) {
-                var className = "org/cocos2dx/javascript/AppActivity";
-                var methodName = "quickRegister";
-                var methodSignature = "()V";
-                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-            }
-        }
-    },
 });

@@ -16,7 +16,12 @@ module.exports = {
     "retry_update": "重试",
     "fail_update": "更新失败，请重试",
     "account_not_empty": "帐号不能为空",
-    "passwd_not_empty": "密码不能为空"
+    "passwd_not_empty": "密码不能为空",
+    "exchange_format": "%d积分=%d金币",
+    "own_point_format": "积分：%d",
+    "confirm_exchange_coin": "确定使用%d积分兑换%d金币吗？",
+    "exchange_success": "兑换成功",
+    "buy_physical_success": "购买体力成功"
 };
 
 cc._RFpop();

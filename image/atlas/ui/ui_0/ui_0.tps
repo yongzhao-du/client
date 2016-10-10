@@ -157,6 +157,7 @@
             <filename>loading_1_bg.png</filename>
             <filename>close_button_0_touch.png</filename>
             <filename>close_button_0_normal.png</filename>
+            <filename>gai_icon.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -17,14 +17,17 @@ module.exports.Method = Method;
 module.exports.Stats = Stats;
 
 module.exports.request = function (url, method, args, callback) {
+    var success = true;
+
     var xhr = cc.loader.getXMLHttpRequest();
     xhr.onreadystatechange = function () {
+        cc.log('onreadystatechange');
         var response = xhr.responseText;
         if (typeof callback === 'function') {
             if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 400) {
                 callback(Stats.OK, response);
             } else {
-                callback(Stats.FAIL, response);
+                callback(Stats.FAIL);
             }
         }
     };
@@ -50,6 +53,11 @@ module.exports.request = function (url, method, args, callback) {
     ['loadstart', 'abort', 'error', 'load', 'loadend', 'timeout'].forEach(function (eventname) {
         xhr["on" + eventname] = function () {
             cc.log("\nEvent : " + eventname);
+            if (eventname === 'error') {
+                success = false;
+            } else if (eventname === 'loadend' && !success) {
+                callback(Stats.FAIL);
+            }
         };
     });
 

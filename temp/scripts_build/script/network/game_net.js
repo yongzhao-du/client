@@ -16,6 +16,11 @@ module.exports['class'] = cc.Class({
         this._httpConnection.setRespondCallback(this.httpRespond.bind(this));
     },
 
+    retryHttpRequest: function retryHttpRequest() {
+        if (!this._httpReauestInfo) return;
+        this.httpRequest(this._httpReauestInfo.data, this._httpReauestInfo.callback);
+    },
+
     httpRequest: function httpRequest(data, callback) {
         Global.gameEventDispatcher.emit(GameEvent.ON_HTTP_REQUEST);
         var self = this;
@@ -36,6 +41,7 @@ module.exports['class'] = cc.Class({
             var handler = this._httpHandlers[json.data.gameMsgId];
             handler && handler(json);
         } else {
+            Global.gameEventDispatcher.emit(GameEvent.ON_NETWORK_ERROR);
             this.removeHttpRespondListener(this._httpReauestInfo.data.gameMsgId);
         }
     },

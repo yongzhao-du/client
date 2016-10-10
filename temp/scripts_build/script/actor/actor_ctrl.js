@@ -96,6 +96,7 @@ cc.Class({
 
         this._bornEndTime = 0;
 
+        this._lastHitResult = false;
         this._isInvincible = false;
         this._defaultComboValue = 100;
         this._remainComboValue = this._defaultComboValue;
@@ -148,6 +149,7 @@ cc.Class({
 
         this._bornEndTime = 0;
 
+        this._lastHitResult = false;
         this._isInvincible = false;
         this._remainComboValue = this._defaultComboValue;
 
@@ -195,8 +197,10 @@ cc.Class({
         this.setDirection(dir);
     },
 
-    setHp: function setHp(value) {
+    setHp: function setHp(value, max) {
         if (value < 0) value = 0;
+        if (value < 1) value = 1;
+        this._hpMax = value;
         this._hp = value;
     },
 
@@ -542,7 +546,7 @@ cc.Class({
             // 已完成或可完成
             case ActionCompleteType.COMPLETABLE:
                 if (this === this._logicManager.getPlayer()) {
-                    cc.log('abc');
+                    //cc.log('abc');
                 }
                 if (this._currAction == ActorAction.DISAPPEAR) {
                     this._logicManager.removeEnity(this);
@@ -616,17 +620,22 @@ cc.Class({
         var region = new cc.Rect(offset.x, offset.y, timePoint.range.width, timePoint.range.height);
         var hittingActors = null;
         var player = this._logicManager.getPlayer();
-        if (this === player) hittingActors = this._logicManager.getActorByRegion(this, region);else hittingActors = [player];
+        var attackValue = timePoint.actValue[0];
+        if (this === player) hittingActors = this._logicManager.getActorByRegion(this, region);else {
+            hittingActors = [player];
+            attackValue += (this._logicManager.getRound() - 1) * 20;
+        }
         var result = false;
         for (var i = 0; i < hittingActors.length; i++) {
             var actor = hittingActors[i];
-            if (actor.stuck(this, region.clone(), timePoint.attackType, timePoint.actValue[0], timePoint.attackParam)) result = true;
+            if (actor.stuck(this, region.clone(), timePoint.attackType, attackValue, timePoint.attackParam)) result = true;
         }
         if (result && timePoint.sound && timePoint.sound !== 0) {
             cc.loader.loadRes("sound/" + timePoint.sound, cc.AudioClip, function (err, audioClip) {
                 cc.audioEngine.playEffect(audioClip, false);
             });
         }
+        this._lastHitResult = result;
     },
 
     takeSkillSelfDelay: function takeSkillSelfDelay(timePoint) {

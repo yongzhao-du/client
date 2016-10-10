@@ -19,7 +19,7 @@ module.exports.data = [{
         timePoints: [{
             actType: 1,
             takeTime: 0.25,
-            actValue: [100],
+            actValue: [20],
             range: new cc.Rect(30, 88, 38, 29),
             attackType: 1,
             sound: 1
@@ -35,7 +35,7 @@ module.exports.data = [{
         timePoints: [{
             actType: 1,
             takeTime: 0.2,
-            actValue: [100],
+            actValue: [22],
             range: new cc.Rect(33, 98, 30, 45),
             attackType: 2,
             attackParam: { topTime: 0.4, topHeight: 100, distance: 30, combo: 35 },
@@ -53,7 +53,7 @@ module.exports.data = [{
         timePoints: [{
             actType: 1,
             takeTime: 0.25,
-            actValue: [100],
+            actValue: [26],
             range: new cc.Rect(41, 78, 90, 33),
             attackType: 2,
             attackParam: { topTime: 0.4, topHeight: 20, distance: 300, combo: 70 },
@@ -94,7 +94,7 @@ module.exports.data = [{
         timePoints: [{
             actType: 1,
             takeTime: 0.25,
-            actValue: [100],
+            actValue: [20],
             range: new cc.Rect(30, 88, 38, 29),
             attackType: 1,
             sound: 1

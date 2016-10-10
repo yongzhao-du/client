@@ -78,7 +78,12 @@ cc.Class({
 
     resetCountDown: function resetCountDown() {
         this.stopCountDown();
-        this.startCountDown(Global.accountModule.nextPowerTime);
+        if (this._physical < this.maxPhysical) {
+            this.countDownLabel.node.active = true;
+            this.startCountDown(Global.accountModule.nextPowerTime);
+        } else {
+            this.countDownLabel.node.active = false;
+        }
     },
 
     startCountDown: function startCountDown(time) {
@@ -165,29 +170,8 @@ cc.Class({
         } else {
             this._uiManager.openUI('physical_not_enough');
         }
-    },
-
-    onRegisteButtonClick: function onRegisteButtonClick() {
-        if (cc.sys.isMobile) {
-            if (cc.sys.platform == cc.sys.ANDROID) {
-                var className = "org/cocos2dx/javascript/AppActivity";
-                var methodName = "quickRegister";
-                var methodSignature = "()V";
-                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-            }
-        }
-    },
-
-    onForgetButtonClick: function onForgetButtonClick() {
-        if (cc.sys.isMobile) {
-            if (cc.sys.platform == cc.sys.ANDROID) {
-                var className = "org/cocos2dx/javascript/AppActivity";
-                var methodName = "quickRegister";
-                var methodSignature = "()V";
-                jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-            }
-        }
     }
+
 });
 
 cc._RFpop();

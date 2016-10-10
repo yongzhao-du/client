@@ -125,11 +125,21 @@ cc.Class({
     },
 
     onRegisteButtonClick: function onRegisteButtonClick() {
-        cc.log("registe");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     },
 
     onForgetButtonClick: function onForgetButtonClick() {
-        cc.log("forget");
+        if (cc.sys.platform == cc.sys.ANDROID) {
+            var className = "org/cocos2dx/javascript/AppActivity";
+            var methodName = "quickRegister";
+            var methodSignature = "()V";
+            jsb.reflection.callStaticMethod(className, methodName, methodSignature);
+        }
     }
 
 });
