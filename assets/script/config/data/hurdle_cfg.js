@@ -47,7 +47,10 @@ module.exports.data = [
                                 cmdType: 1,
                                 args: { enabled: true }
                             },
-                            
+                            {
+                                cmdType: 8,
+                                args: {}
+                            },
                         ]
                     },
                     {
@@ -74,6 +77,10 @@ module.exports.data = [
                                 cmdType: 3,
                                 args: { id: 1, pos: { x: 1500, y: 100 }, dir: -1 }
                             },
+                            {
+                                cmdType: 9,
+                                args: {}
+                            }
                         ]
                     },
                 ],
@@ -194,6 +201,10 @@ module.exports.data = [
                         param: 0,
                         commands: [
                             {
+                                cmdType: 5,
+                                args: { show: true },
+                            },
+                            {
                                 cmdType: 4,
                                 args: { x: 5535, y: 170 }
                             },
@@ -207,6 +218,10 @@ module.exports.data = [
                         event: 2,
                         param: { x: 5480, y: 120, width: 100, height: 100, },
                         commands: [
+                            {
+                                cmdType: 5,
+                                args: { show: false },
+                            },
                             {
                                 cmdType: 6,
                                 args: { id: 0 },

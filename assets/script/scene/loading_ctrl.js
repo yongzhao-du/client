@@ -379,12 +379,14 @@ cc.Class({
     
     onConfirmClick: function () {
         if (this._needRetry || this._needUpdate) {
+            GameUtil.playButtonSound();
             this.showUpdatePanel(PanelType.START_UPDATE);
             this.doUpdate();
         }
     },
     
     onCancelClick: function () {
+        GameUtil.playButtonSound();
         cc.director.end();
     },
     

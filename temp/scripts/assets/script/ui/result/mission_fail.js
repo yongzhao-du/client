@@ -18,55 +18,45 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        retryButton: cc.Node,
         returnButton: cc.Node,
-        retryCoinLabel: cc.Label
+        killLabel: cc.Label,
+        roundLabel: cc.Label,
+        maxKillLabel: cc.Label,
+        maxRoundLabel: cc.Label
     },
 
     // use this for initialization
     onLoad: function onLoad() {
         this._uiCtrl = this.getComponent('ui_ctrl');
-        this._retryCount = 3 - this._uiCtrl.args.retryCount;
-        if (this._retryCount >= 3) {
-            this.retryButton.active = false;
-            this.returnButton.x = 0;
-        } else {
-            var needCoin = timesMapCoin[this._retryCount];
-            this.retryCoinLabel.string = needCoin;
+        this._killNum = this._uiCtrl.args.killNum;
+        this._roundNum = this._uiCtrl.args.roundNum;
+
+        this.killLabel.string = this._killNum.toString();
+        this.roundLabel.string = this._roundNum.toString();
+
+        var maxScore = Global.accountModule.maxScore.toString();
+        cc.log('maxScore', maxScore);
+        var i = maxScore.length;
+        for (; i >= 0; i--) {
+            if (maxScore.charAt(i) === '0') break;
         }
-        this._exchangeHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_EXCHANGE_GOLD, this.onExchangeSuccess.bind(this));
-        this._continueHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_BUY_TIME_TO_PLAY, this.onContinueGame.bind(this));
+        var maxKill = parseInt(maxScore.substring(0, i)) - 1;
+        var maxRound = maxScore.substring(i + 1, maxScore.length);
+
+        this.maxKillLabel.string = maxKill.toString();
+        this.maxRoundLabel.string = maxRound;
     },
 
-    onDestroy: function onDestroy() {
-        Global.gameEventDispatcher.removeEventHandler(this._exchangeHandler);
-        Global.gameEventDispatcher.removeEventHandler(this._continueHandler);
-        this._exchangeHandler = null;
-        this._continueHandler = null;
+    start: function start() {
+        cc.loader.loadRes("sound/4", cc.AudioClip, function (err, audioClip) {
+            cc.audioEngine.playMusic(audioClip, false);
+        });
     },
 
-    onExchangeSuccess: function onExchangeSuccess() {
-        var needCoin = timesMapCoin[this._retryCount];
-        if (Global.accountModule.goldNum >= needCoin) {
-            GameRpc.Clt2Srv.buyTimeToPlayGame(this._retryCount);
-        }
-    },
-
-    onContinueGame: function onContinueGame() {
-        this._uiCtrl.close();
-    },
-
-    onRetryButtonClick: function onRetryButtonClick() {
-        var needCoin = timesMapCoin[this._retryCount];
-        var ownCoin = Global.accountModule.goldNum;
-        if (ownCoin < needCoin) {
-            this._uiCtrl.manager.openUI('coin_not_enough');
-        } else {
-            GameRpc.Clt2Srv.buyTimeToPlayGame(this._retryCount);
-        }
-    },
+    onDestroy: function onDestroy() {},
 
     onReturnButtonClick: function onReturnButtonClick() {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
         Global.gameEventDispatcher.emit(GameEvent.ON_RETURN_GAME);
     }

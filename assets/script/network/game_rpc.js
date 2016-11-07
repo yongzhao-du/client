@@ -139,7 +139,7 @@ var Clt2Srv = {
     gameResult: function (score) {
 		Global.gameNet.httpRequest({
 		    type: Global.gameType,
-			gameMsgId: GameProtocol.Protocol.CONTINUE_GAME,
+			gameMsgId: GameProtocol.Protocol.RESULT_GAME,
 			token: Global.loginModule.token,
 			score: score,
 		}, Srv2Clt.retGameResult);

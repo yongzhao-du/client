@@ -17,12 +17,33 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {},
 
+    start: function start() {
+        if (this._isBattle) {
+            cc.director.pause();
+        }
+    },
+
+    setNativeCtrl: function setNativeCtrl(nativeCtrl) {
+        this._nativeCtrl = nativeCtrl;
+    },
+
+    setIsBattle: function setIsBattle(value) {
+        this._isBattle = value;
+    },
+
     onOkButtonClick: function onOkButtonClick() {
+        GameUtil.playButtonSound();
         cc.director.end();
     },
 
     onCancelButtonClick: function onCancelButtonClick() {
-        this.node.destroy();
+        GameUtil.playButtonSound();
+        if (this._isBattle) {
+            cc.director.resume();
+        }
+        if (this._nativeCtrl) {
+            this._nativeCtrl.removeExitDialog();
+        }
     }
 
 });

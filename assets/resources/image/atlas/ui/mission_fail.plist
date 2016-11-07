@@ -7,24 +7,24 @@
             <key>fail.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{605,340}}</string>
+                <string>{{2,2},{395,456}}</string>
                 <key>offset</key>
-                <string>{6,3}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{12,0},{605,340}}</string>
+                <string>{{8,0},{395,456}}</string>
                 <key>sourceSize</key>
-                <string>{617,346}</string>
+                <string>{411,456}</string>
             </dict>
             <key>fail_relive_btn_normal.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,423},{210,207}}</string>
+                <string>{{221,399},{210,207}}</string>
                 <key>offset</key>
                 <string>{-1,5}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{16,5},{210,207}}</string>
                 <key>sourceSize</key>
@@ -33,7 +33,7 @@
             <key>fail_relive_btn_touch.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{609,2},{210,217}}</string>
+                <string>{{2,399},{210,217}}</string>
                 <key>offset</key>
                 <string>{-1,5}</string>
                 <key>rotated</key>
@@ -46,28 +46,28 @@
             <key>fail_return_btn_normal.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{828,2},{210,193}}</string>
+                <string>{{360,608},{137,125}}</string>
                 <key>offset</key>
-                <string>{-1,-2}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
-                <string>{{16,19},{210,193}}</string>
+                <string>{{0,0},{137,125}}</string>
                 <key>sourceSize</key>
-                <string>{244,227}</string>
+                <string>{137,125}</string>
             </dict>
             <key>fail_return_btn_touch.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{609,214},{210,207}}</string>
+                <string>{{221,608},{137,125}}</string>
                 <key>offset</key>
-                <string>{-1,5}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{16,5},{210,207}}</string>
+                <string>{{0,0},{137,125}}</string>
                 <key>sourceSize</key>
-                <string>{244,227}</string>
+                <string>{137,125}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -77,9 +77,9 @@
             <key>realTextureFileName</key>
             <string>mission_fail.png</string>
             <key>size</key>
-            <string>{1024,1024}</string>
+            <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e4ddf60e1d0e3572336a90259baea295$</string>
+            <string>$TexturePacker:SmartUpdate:91855ea7440a4df8a55ad768c7ca8693$</string>
             <key>textureFileName</key>
             <string>mission_fail.png</string>
         </dict>

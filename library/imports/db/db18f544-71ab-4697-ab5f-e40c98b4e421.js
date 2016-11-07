@@ -20,6 +20,7 @@ cc.Class({
     },
 
     onBuyButtonClick: function onBuyButtonClick() {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
         var coin = Global.accountModule.goldNum;
         if (Global.accountModule.goldNum < 50) {
@@ -31,6 +32,7 @@ cc.Class({
     },
 
     onCancelButtonClick: function onCancelButtonClick() {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
     }
 

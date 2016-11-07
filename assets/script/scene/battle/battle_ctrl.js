@@ -1,9 +1,12 @@
 const HurldeDefine = require("hurdle_define");
 const ControlDefine = require("control_define");
+const GuideDefine = require("guide_define")
 const TriggerType = HurldeDefine.TriggerType;
 const CmdType = HurldeDefine.CmdType;
 const CondType = HurldeDefine.CondType;
 const ControlKey = ControlDefine.ControlKey;
+const GuideStep = GuideDefine.GuideStep;
+const GuideMask = GuideDefine.GuideMask;
 
 const HurdleLoadBit = {
     MAP:    0x0001,
@@ -24,6 +27,17 @@ cc.Class({
         moveTips: cc.Node,
         roundBar: cc.Node,
         playerPrefab: cc.Prefab,
+        guideFingerAni: cc.Animation,
+        
+        guideStep: {
+            get: function () {
+                return this._guideStep;
+            },
+            
+            set: function (step) {
+                this._guideStep;
+            }
+        }
     },
 
     // use this for initialization
@@ -63,6 +77,7 @@ cc.Class({
         this._hurdleStartTime = 0;
         this._killNum = 0;
         this._roundNum = 0;
+        this._totalKillNum = 0;
         
         this._keepEffects = [];
         this._monsters = [];
@@ -84,13 +99,23 @@ cc.Class({
     onDestroy: function () {
         Global.gameEventDispatcher.removeEventHandler(this._reliveHandler);
         Global.gameEventDispatcher.removeEventHandler(this._returnHandler);
+        
         this._reliveHandler = null;
         this._returnHandler = null;
+
+        if (this._resultHandler) {
+            Global.gameEventDispatcher.removeEventHandler(this._resultHandler);
+            this._resultHandler = null;
+        }
 
         cc.audioEngine.stopMusic(true);
 
         // 不能这样做，destroy时所有listener已移除
         //cc.eventManager.removeListener(this._listener);
+    },
+    
+    pause: function (show) {
+        //cc.director.pause();
     },
     
     onKeyPressed: function (keyCode, event) {
@@ -139,6 +164,12 @@ cc.Class({
             this._player.keyUp(ck);
     },
     
+    onResultGame: function () {
+        Global.gameEventDispatcher.removeEventHandler(this._resultHandler);
+        this._resultHandler = null;
+        this._uiManager.openUI('mission_fail', { killNum: this._totalKillNum, roundNum: this._roundNum });
+    },
+
     onRetryGame: function () {
         this._retryCount--;
         this._player.relive();
@@ -191,6 +222,7 @@ cc.Class({
         this._isFail = false;
         this._isFinish = false;
         this._roundNum = 0;
+        this._totalKillNum = 0;
         this.roundBar.active = false;
         this._retryCount = defaultRetryCount;
     },
@@ -307,7 +339,6 @@ cc.Class({
     loadMusic: function() {
         var self = this;
         cc.loader.loadRes("sound/bg", cc.AudioClip, function (err, audioClip) {
-            cc.log('play music');
             cc.audioEngine.playMusic(audioClip, true);
         });
     },
@@ -404,6 +435,7 @@ cc.Class({
     
     killMonster: function () {
         this._killNum++;
+        this._totalKillNum++;
     },
 
     getActorByRegion: function (actor, region) {
@@ -432,7 +464,15 @@ cc.Class({
         } else {
             if (!this._isFail) {
                 this._isFail = true;
-                this._uiManager.openUI('mission_fail', {retryCount : this._retryCount});
+                cc.log('retry count', this._retryCount);
+                if (this._retryCount > 0) {
+                    this._uiManager.openUI('relive_confirm', {retryCount : this._retryCount, killNum: this._totalKillNum, roundNum: this._roundNum});
+                } else {
+                    this._resultHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_GAME_RESULT, this.onResultGame.bind(this));
+                    var maxScore = parseInt((this._totalKillNum + 1) + "0" + this._roundNum);
+                    GameRpc.Clt2Srv.gameResult(maxScore);
+                }
+                
                 return;
             }
         }
@@ -508,15 +548,45 @@ cc.Class({
 
                 case CmdType.SHOW_TRANS_DOOR:
                     this.playEffect(8, 0, new cc.Vec2(cmd.args.x, cmd.args.y), false, true);
+                    if (!(Global.guideStep & GuideMask.TRANS_DOOR_ARROW)) {
+                        this.playEffect(9, 1, new cc.Vec2(cmd.args.x, cmd.args.y), false, true);
+                        this._guideStep = GuideStep.ENTER_TRANS_DOOR;
+                        Global.guideStep |= GuideMask.TRANS_DOOR_ARROW;
+                    }
                     break;
 
                 case CmdType.CHANGE_HURDLE:
                     needBreak = true;
+                    if (this._guideStep == GuideStep.ENTER_TRANS_DOOR) {
+                        cc.sys.localStorage.setItem('guide_mask', Global.guideStep);
+                        this._guideStep = GuideStep.NONE;
+                    }
                     this.changeHurdle(cmd.args.id);
                     break;
 
                 case CmdType.MOVE_CAMERA:
                     this._map.cameraTo(cmd.args.x, cmd.args.y, cmd.args.time);
+                    break;
+                    
+                case CmdType.DO_MOVE_GUIDE:
+                    if (!(Global.guideStep & GuideMask.MOVE)) {
+                        this.guideFingerAni.node.x = this.joyStick.x;
+                        this.guideFingerAni.node.y = this.joyStick.y;
+                        this.guideFingerAni.play('guide_finger_move');
+                        this._guideStep = GuideStep.MOVE;
+                        Global.guideStep |= GuideMask.MOVE;
+                    }
+                    break;
+                    
+                case CmdType.DO_TOUCH_GUIDE:
+                    if (!(Global.guideStep & GuideMask.HIT)) {
+                        cc.log("DO_TOUCH_GUIDE");
+                        this.guideFingerAni.node.x = this.attackButton.x;
+                        this.guideFingerAni.node.y = this.attackButton.y;
+                        this.guideFingerAni.play('guide_finger_touch');
+                        this._guideStep = GuideStep.TOUCH;
+                        Global.guideStep |= GuideMask.HIT;
+                    }
                     break;
 
                 default:
@@ -524,6 +594,14 @@ cc.Class({
             }
             if (needBreak) break;
         }
+    },
+    
+    endGuide: function () {
+        this.guideFingerAni.node.x = -5000;
+        this.guideFingerAni.node.y = -5000;
+        this.guideFingerAni.stop();
+        this._guideStep = GuideStep.NONE;
+        cc.sys.localStorage.setItem("guide_mask", Global.guideStep);
     },
 
     checkMissionClean:function () {

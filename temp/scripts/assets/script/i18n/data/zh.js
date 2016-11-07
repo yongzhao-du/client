@@ -21,7 +21,10 @@ module.exports = {
     "own_point_format": "积分：%d",
     "confirm_exchange_coin": "确定使用%d积分兑换%d金币吗？",
     "exchange_success": "兑换成功",
-    "buy_physical_success": "购买体力成功"
+    "buy_physical_success": "购买体力成功",
+    "accout_or_passwd_error": "帐号或密码错误",
+    "own_gold_num_format": "拥有：%d 金币",
+    "own_gold_num_format_2": "金币：%d"
 };
 
 cc._RFpop();

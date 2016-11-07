@@ -1786,7 +1786,7 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5,
+      "x": 0,
       "y": 0.5
     },
     "_contentSize": {
@@ -1801,7 +1801,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -273,
+      "x": -348,
       "y": 132.5
     },
     "_skewX": 0,
@@ -3276,6 +3276,9 @@
     },
     "errorPrefab": {
       "__uuid__": "f6f412e1-88df-4950-99e8-562db14f6825"
+    },
+    "loginTimeOutPrefab": {
+      "__uuid__": "00fac694-80af-4fb9-8e73-2cfee6e05850"
     }
   },
   {

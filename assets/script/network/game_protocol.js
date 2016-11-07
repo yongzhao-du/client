@@ -11,11 +11,11 @@ module.exports.Protocol = Protocol;
     
 var URLs = {
     [Protocol.LOGIN]: "http://youxi.egatewang.cn/index/login",
-    [Protocol.GET_DATA]: "http://youxi.egatewang.cn/Shourenlaile/index?type=getGameData",
+    [Protocol.GET_DATA]: "http://youxi.egatewang.cn/Daluandou/index?type=getGameData",
     [Protocol.EXCHANGE_GOLD]: "http://youxi.egatewang.cn/index/exchange",
-    [Protocol.START_GAME]: "http://youxi.egatewang.cn/Shourenlaile/index?type=startGame",
-    [Protocol.FULL_POWER]: "http://youxi.egatewang.cn/Shourenlaile/index?type=buyFullPower",
-    [Protocol.CONTINUE_GAME]: "http://youxi.egatewang.cn/Shourenlaile/index?type=buyTimeToPlayGame",
-    [Protocol.RESULT_GAME]: "http://youxi.egatewang.cn/Shourenlaile/index?type=gameResult"
+    [Protocol.START_GAME]: "http://youxi.egatewang.cn/Daluandou/index?type=startGame",
+    [Protocol.FULL_POWER]: "http://youxi.egatewang.cn/Daluandou/index?type=buyFullPower",
+    [Protocol.CONTINUE_GAME]: "http://youxi.egatewang.cn/Daluandou/index?type=buyTimeToPlayGame",
+    [Protocol.RESULT_GAME]: "http://youxi.egatewang.cn/Daluandou/index?type=gameResult"
 };
 module.exports.URLs = URLs;

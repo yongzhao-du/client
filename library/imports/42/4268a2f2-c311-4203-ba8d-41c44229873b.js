@@ -34,10 +34,15 @@ cc.Class({
         if (typeof value === 'string') ;else if (typeof value === 'number') value = value.toString();else return;
 
         while (this._nums.length > 0) {
-            var node = this._nums.pop();
-            node.parent = null;
-            node.destroy();
+            var oldNode = this._nums.pop();
+            var action = new cc.Sequence(new cc.FadeOut(0.5), new cc.CallFunc(function (target, data) {
+                data.parent = null;
+                data.destroy();
+            }, null, oldNode));
+            oldNode.runAction(action);
         }
+
+        this._nums.splice(0, this._nums.length);
         this._ani.stop();
         this.round.active = false;
         var self = this;

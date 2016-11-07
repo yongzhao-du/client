@@ -7,4 +7,10 @@ module.exports = {
         });*/
     },
     
+    playButtonSound: function () {
+        cc.loader.loadRes("sound/button_click", cc.AudioClip, function (err, audioClip) {
+            cc.audioEngine.playEffect(audioClip, false);
+        });
+    }
+    
 }

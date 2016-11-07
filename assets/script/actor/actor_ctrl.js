@@ -282,6 +282,9 @@ cc.Class({
         this._floatSpeed.x = 0;
         this._floatSpeed.y = 0;
         this._floatUpAccelerator = 0;
+        cc.loader.loadRes("sound/5", cc.AudioClip, function (err, audioClip) {
+            cc.audioEngine.playEffect(audioClip, false);
+        })
     },
     
     startCollapse: function () {
@@ -700,7 +703,7 @@ cc.Class({
             switch (attackType) {
                 case AttackType.NORMAL:
                     if (this._floatStartTime <= 0)
-                        this.startHurt(0.5, this._direction);
+                        this.startHurt(0.3, this._direction);
                     break;
                 case AttackType.FLY:
                     this._remainComboValue -= attackParam.combo;

@@ -24,6 +24,7 @@ cc.Class({
     },
     
     onButtonClick: function (event) {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
         if (typeof(this._callback) === 'function') {
             var name = event.target.name;

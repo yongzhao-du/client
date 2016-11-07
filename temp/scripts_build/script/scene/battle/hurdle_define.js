@@ -16,7 +16,9 @@ module.exports.CmdType = {
     SHOW_TRANS_DOOR: 4,
     SHOW_MOVE_TIPS: 5,
     CHANGE_HURDLE: 6,
-    MOVE_CAMERA: 7
+    MOVE_CAMERA: 7,
+    DO_MOVE_GUIDE: 8,
+    DO_TOUCH_GUIDE: 9
 };
 
 module.exports.CondType = {

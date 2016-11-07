@@ -1,3 +1,4 @@
+var GuideDefine = require("guide_define");
 var ControlDefine = require("control_define");
 var ActorDefine = require("actor_define");
 var Actor = require("actor_ctrl");
@@ -6,6 +7,7 @@ var ControlKey = ControlDefine.ControlKey;
 var ActorAction = ActorDefine.ActorAction;
 var ActorDirection = ActorDefine.ActorDirection;
 var ActionCompleteType = ActorDefine.ActionCompleteType;
+var GuideStep = GuideDefine.GuideStep;
 
 cc.Class({
     extends: Actor,
@@ -231,6 +233,20 @@ cc.Class({
         if (this.controlEnabled) {
             this._keyDownCount++;
             this._keyDownTime[key] = this._keyDownCount;
+        }
+        var guideStep = this.logicManager.guideStep;
+        if ((guideStep == GuideStep.MOVE)
+        && (key == ControlKey.LEFT
+        || key == ControlKey.UP
+        || key == ControlKey.DOWN
+        || key == ControlKey.RIGHT)) {
+            this.logicManager.endGuide();
+        } else if (guideStep == GuideStep.TOUCH) {
+            cc.log("key down DO_TOUCH_GUIDE");
+            if (key == ControlKey.HIT) {
+                cc.log("key down DO_TOUCH_GUIDE end");
+                this.logicManager.endGuide();
+            }
         }
     },
     

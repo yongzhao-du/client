@@ -66,7 +66,7 @@ cc.Class({
             var dirX = ActorDirection.LEFT;
             var dirY = 0;
             if (disX > 0) dirX = ActorDirection.RIGHT;
-            if (Math.abs(disY) > 10) {
+            if (Math.abs(disY) > 19) {
                 if (disY > 0) dirY = 1;else dirY = -1;
             } else {
                 dirY = 0;
@@ -83,7 +83,7 @@ cc.Class({
                         return;
                     }
                     this.stopMove();
-                    this._AIAttackDelayEndTime = currTime + 5;
+                    this._AIAttackDelayEndTime = currTime + Math.random() * 3 + 1.5;
                     var postureList = [skill.postures[0]];
                     this.startAttack(postureList, 1, this._direction);
                 } else {
@@ -101,14 +101,14 @@ cc.Class({
                     this._AIMoveEndTime = 0;
                     this.stopMove();
                     this._super();
-                    this._AIHoldEndTime = currTime + Math.random() * 2 + 1;
+                    this._AIHoldEndTime = currTime + Math.random() * 0.5 + 0.5;
                 }
             } else if (this._AIHoldEndTime > 0) {
                 if (currTime >= this._AIHoldEndTime) {
                     this._AIHoldEndTime = 0;
                 }
             } else {
-                this._AIMoveEndTime = currTime + Math.random() * 2 + 2;
+                this._AIMoveEndTime = currTime + Math.random() * 2 + 0.5;
             }
         }
     }

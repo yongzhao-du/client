@@ -59,6 +59,8 @@ cc.Class({
         this._getGameDataHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_GET_GAME_DATA, this.onGetGameData.bind(this));
         this._exchangeHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_EXCHANGE_GOLD, this.onExchangeCoin.bind(this));
         this._buyPhysicalHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_BUY_PHYSICAL, this.onBuyFullPhysical.bind(this));
+
+        this.loadMusic();
     },
 
     onDestroy: function onDestroy() {
@@ -70,6 +72,7 @@ cc.Class({
         this._getGameDataHandler = null;
         this._exchangeHandler = null;
         this._startHandler = null;
+        cc.audioEngine.stopMusic(true);
     },
 
     start: function start() {
@@ -123,7 +126,15 @@ cc.Class({
         return true;
     },
 
+    loadMusic: function loadMusic() {
+        var self = this;
+        cc.loader.loadRes("sound/game", cc.AudioClip, function (err, audioClip) {
+            cc.audioEngine.playMusic(audioClip, true);
+        });
+    },
+
     onAddCoinButtonClick: function onAddCoinButtonClick() {
+        GameUtil.playButtonSound();
         this._uiManager.openUI('exchange_coin');
     },
 
@@ -164,6 +175,7 @@ cc.Class({
     },
 
     onPlayButtonClick: function onPlayButtonClick() {
+        GameUtil.playButtonSound();
         if (this.costPhysical()) {
             this.stopCountDown();
             GameRpc.Clt2Srv.startGame();

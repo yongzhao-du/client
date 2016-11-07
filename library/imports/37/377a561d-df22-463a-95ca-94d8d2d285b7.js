@@ -4,6 +4,7 @@ cc.Class({
     'extends': cc.Component,
 
     properties: {
+        goldLabel: cc.Label,
         ownLabel: cc.Label,
         rateLabel: cc.Label,
         itemContent: cc.Node,
@@ -18,6 +19,7 @@ cc.Class({
 
         this.rateLabel.string = cc.js.formatStr(GameLang.t('exchange_format'), 1, this._exchangeRate);
         this.ownLabel.string = cc.js.formatStr(GameLang.t('own_point_format'), this._ownPoint);
+        this.goldLabel.string = cc.js.formatStr(GameLang.t('own_gold_num_format_2'), Global.accountModule.goldNum);
 
         this._exchangeHandler = Global.gameEventDispatcher.addEventHandler(GameEvent.ON_EXCHANGE_GOLD, this.onExchangeSuccess.bind(this));
     },
@@ -52,6 +54,7 @@ cc.Class({
     },
 
     onItemExchangeButtonClick: function onItemExchangeButtonClick(event) {
+        GameUtil.playButtonSound();
         var self = this;
         var target = event.target;
         var point = exchangePoints[target.tag];
@@ -68,6 +71,7 @@ cc.Class({
     },
 
     onCloseButtonClick: function onCloseButtonClick() {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
     }
 

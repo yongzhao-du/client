@@ -19,6 +19,9 @@ cc.Class({
         cc.game.addPersistRootNode(this.node);
     },
 
+    onDestroy: function () {
+    },
+
     update: function (dt) {
         if (!Global.initted)
             this.init();
@@ -27,10 +30,16 @@ cc.Class({
     },
     
     init: function () {
-        Global.gameType = 36;
+        Global.gameType = 41;
         Global.syncTimer = new SyncTimer();
         Global.gameNet = new GameNet();
         Global.gameEventDispatcher = new GameEventDispatcher();
+
+        var guideStep = cc.sys.localStorage.getItem("guide_mask");
+        if (!guideStep)
+            guideStep = 0;
+        Global.guideStep = guideStep;
+
         Global.initted = true;
     },
     

@@ -36,8 +36,14 @@ module.exports.class = cc.Class({
     httpRespond: function (stats, json) {
         Global.gameEventDispatcher.emit(GameEvent.ON_HTTP_RESPOND);
         if (stats == HttpUtil.Stats.OK) {
-            var handler = this._httpHandlers[json.data.gameMsgId];
-            handler && handler(json);
+            cc.log('game net code', json.code);
+            if (json.code === 6) {
+                Global.gameEventDispatcher.emit(GameEvent.ON_LOGIN_TIME_OUT);
+                this.removeHttpRespondListener(this._httpReauestInfo.data.gameMsgId)
+            } else {
+                var handler = this._httpHandlers[json.data.gameMsgId];
+                handler && handler(json);
+            }
         } else {
             Global.gameEventDispatcher.emit(GameEvent.ON_NETWORK_ERROR);
             this.removeHttpRespondListener(this._httpReauestInfo.data.gameMsgId)

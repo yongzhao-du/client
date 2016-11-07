@@ -38,7 +38,7 @@
             "docks": [
               {
                 "active": 0,
-                "height": 726,
+                "height": 482,
                 "panels": [
                   "scene"
                 ],
@@ -47,7 +47,7 @@
               },
               {
                 "active": 0,
-                "height": 200,
+                "height": 444,
                 "panels": [
                   "console",
                   "timeline"

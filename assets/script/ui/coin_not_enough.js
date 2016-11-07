@@ -21,11 +21,13 @@ cc.Class({
     },
     
     onExchangeButtonClick: function () {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
         this._uiCtrl.manager.openUI('exchange_coin');
     },
     
     onCancelButtonClick: function () {
+        GameUtil.playButtonSound();
         this._uiCtrl.close();
     },
 

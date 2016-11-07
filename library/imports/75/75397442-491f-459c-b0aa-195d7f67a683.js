@@ -365,12 +365,14 @@ cc.Class({
 
     onConfirmClick: function onConfirmClick() {
         if (this._needRetry || this._needUpdate) {
+            GameUtil.playButtonSound();
             this.showUpdatePanel(PanelType.START_UPDATE);
             this.doUpdate();
         }
     },
 
     onCancelClick: function onCancelClick() {
+        GameUtil.playButtonSound();
         cc.director.end();
     },
 

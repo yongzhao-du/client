@@ -4,9 +4,9 @@
     "unknown"
   ],
   "names": [],
-  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;;AAEb,aAAS,EAAE,mBAAU,IAAI,EAAE;AACvB,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC;;;;KAI/B;;CAEJ,CAAA",
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;;AAEb,aAAS,EAAE,mBAAU,IAAI,EAAE;AACvB,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC;;;;KAI/B;;AAED,mBAAe,EAAE,2BAAY;AACzB,UAAE,CAAC,MAAM,CAAC,OAAO,CAAC,oBAAoB,EAAE,EAAE,CAAC,SAAS,EAAE,UAAU,GAAG,EAAE,SAAS,EAAE;AAC5E,cAAE,CAAC,WAAW,CAAC,UAAU,CAAC,SAAS,EAAE,KAAK,CAAC,CAAC;SAC/C,CAAC,CAAC;KACN;;CAEJ,CAAA",
   "file": "unknown",
   "sourcesContent": [
-    "module.exports = {\r\n    \r\n    loadScene: function (name) {\r\n        cc.director.loadScene(name);\r\n        /*cc.director.preloadScene(name, function () {\r\n            cc.director.loadScene(name);\r\n        });*/\r\n    },\r\n    \r\n}\r\n"
+    "module.exports = {\r\n    \r\n    loadScene: function (name) {\r\n        cc.director.loadScene(name);\r\n        /*cc.director.preloadScene(name, function () {\r\n            cc.director.loadScene(name);\r\n        });*/\r\n    },\r\n    \r\n    playButtonSound: function () {\r\n        cc.loader.loadRes(\"sound/button_click\", cc.AudioClip, function (err, audioClip) {\r\n            cc.audioEngine.playEffect(audioClip, false);\r\n        });\r\n    }\r\n    \r\n}\r\n"
   ]
 }

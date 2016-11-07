@@ -4,9 +4,9 @@
     "unknown"
   ],
   "names": [],
-  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,YAAY,GAAG,KAAK,CAAC;KAC7B;;AAED,UAAM,EAAE,gBAAU,EAAE,EAAE;AAClB,YAAI,MAAM,CAAC,OAAO,IAAI,CAAC,IAAI,CAAC,YAAY,EAAE;AACtC,gBAAI,CAAC,YAAY,GAAG,IAAI,CAAC;AACzB,oBAAQ,CAAC,SAAS,CAAC,SAAS,CAAC,CAAC;SACjC;KACJ;CACJ,CAAC,CAAC",
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,UAAM,EAAE,kBAAY;AAChB,YAAI,EAAE,CAAC,GAAG,CAAC,QAAQ,IAAI,EAAE,CAAC,GAAG,CAAC,KAAK,EAAE;AACjC,cAAE,CAAC,IAAI,CAAC,YAAY,CAAC,IAAI,EAAE,GAAG,CAAC,CAAC;SACnC;AACD,YAAI,CAAC,YAAY,GAAG,KAAK,CAAC;KAC7B;;AAED,UAAM,EAAE,gBAAU,EAAE,EAAE;AAClB,YAAI,MAAM,CAAC,OAAO,IAAI,CAAC,IAAI,CAAC,YAAY,EAAE;AACtC,gBAAI,CAAC,YAAY,GAAG,IAAI,CAAC;AACzB,oBAAQ,CAAC,SAAS,CAAC,SAAS,CAAC,CAAC;SACjC;KACJ;CACJ,CAAC,CAAC",
   "file": "unknown",
   "sourcesContent": [
-    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    onLoad: function () {\r\n        this._loadedScene = false;\r\n    },\r\n    \r\n    update: function (dt) {\r\n        if (Global.initted && !this._loadedScene) {\r\n            this._loadedScene = true;\r\n            GameUtil.loadScene(\"loading\");\r\n        }\r\n    },\r\n});\r\n"
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    onLoad: function () {\r\n        if (cc.sys.platform == cc.sys.WIN32) {\r\n            cc.view.setFrameSize(1136, 640);\r\n        }\r\n        this._loadedScene = false;\r\n    },\r\n    \r\n    update: function (dt) {\r\n        if (Global.initted && !this._loadedScene) {\r\n            this._loadedScene = true;\r\n            GameUtil.loadScene(\"loading\");\r\n        }\r\n    },\r\n});\r\n"
   ]
 }

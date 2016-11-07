@@ -34,6 +34,8 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
+        Global.accountModule.reset();
+
         this.msgLabel.node.active = false;
         this.accountSelectPanel.active = false;
 
@@ -100,12 +102,13 @@ cc.Class({
             this.msgLabel.node.active = false;
         } else {
             cc.log("Account or Password incorrect");
-            this.msgLabel.string = data.data.errorMsg;
+            this.msgLabel.string = GameLang.t('accout_or_passwd_error');
             this.msgLabel.node.active = true;
         }
     },
 
     onLoginButtonClick: function onLoginButtonClick() {
+        GameUtil.playButtonSound();
         var account = this.accountEdit.string;
         var passwd = this.passwdEdit.string;
         if (account.length <= 0) {
@@ -125,6 +128,7 @@ cc.Class({
     },
 
     onRegisteButtonClick: function onRegisteButtonClick() {
+        GameUtil.playButtonSound();
         if (cc.sys.platform == cc.sys.ANDROID) {
             var className = "org/cocos2dx/javascript/AppActivity";
             var methodName = "quickRegister";
@@ -134,6 +138,7 @@ cc.Class({
     },
 
     onForgetButtonClick: function onForgetButtonClick() {
+        GameUtil.playButtonSound();
         if (cc.sys.platform == cc.sys.ANDROID) {
             var className = "org/cocos2dx/javascript/AppActivity";
             var methodName = "quickRegister";

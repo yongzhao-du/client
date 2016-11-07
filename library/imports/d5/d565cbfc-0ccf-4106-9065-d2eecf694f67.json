@@ -2387,6 +2387,9 @@
     },
     "errorPrefab": {
       "__uuid__": "f6f412e1-88df-4950-99e8-562db14f6825"
+    },
+    "loginTimeOutPrefab": {
+      "__uuid__": "00fac694-80af-4fb9-8e73-2cfee6e05850"
     }
   },
   {

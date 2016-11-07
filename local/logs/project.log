@@ -1,203 +1,47 @@
-2016-10-10T03:17:16.597Z - normal: Load ~/.CocosCreator/settings.json
-2016-10-10T03:17:16.602Z - normal: checking language setting...
-2016-10-10T03:17:16.602Z - normal: Language: zh
-2016-10-10T03:17:17.701Z - success: protocol editor-framework registered
-2016-10-10T03:17:17.701Z - success: protocol app registered
-2016-10-10T03:17:17.701Z - success: protocol packages registered
-2016-10-10T03:17:17.701Z - success: protocol theme registered
-2016-10-10T03:17:17.701Z - success: protocol unpack registerred
-2016-10-10T03:17:17.975Z - normal: connected!
-2016-10-10T03:17:17.981Z - normal: Check project E:\cocos\client
-2016-10-10T03:17:17.985Z - normal: Initializing Cocos Creator Editor
-2016-10-10T03:17:18.540Z - normal: Initializing Cocos2d
-2016-10-10T03:17:18.650Z - normal: Initializing Asset Database
-2016-10-10T03:17:18.676Z - success: protocol uuid registerred
-2016-10-10T03:17:18.676Z - success: protocol db registerred
-2016-10-10T03:17:18.676Z - success: protocol thumbnail registerred
-2016-10-10T03:17:18.676Z - normal: Loading editor/builtin packages
-2016-10-10T03:17:18.819Z - success: assets loaded
-2016-10-10T03:17:18.822Z - success: builder loaded
-2016-10-10T03:17:18.825Z - success: hierarchy loaded
-2016-10-10T03:17:18.828Z - success: inspector loaded
-2016-10-10T03:17:18.829Z - success: keystore loaded
-2016-10-10T03:17:18.832Z - success: node-library loaded
-2016-10-10T03:17:18.834Z - success: preferences loaded
-2016-10-10T03:17:18.850Z - success: project-importer loaded
-2016-10-10T03:17:18.851Z - success: project-settings loaded
-2016-10-10T03:17:18.853Z - success: ui-kit loaded
-2016-10-10T03:17:18.868Z - success: ui-grid loaded
-2016-10-10T03:17:18.875Z - success: scene loaded
-2016-10-10T03:17:18.876Z - success: sprite-editor loaded
-2016-10-10T03:17:18.879Z - success: timeline loaded
-2016-10-10T03:17:18.880Z - normal: Loading builtin packages
-2016-10-10T03:17:18.892Z - success: asset-db-debugger loaded
-2016-10-10T03:17:18.893Z - success: cocos-package loaded
-2016-10-10T03:17:18.894Z - success: code-editor loaded
-2016-10-10T03:17:18.895Z - success: color-picker loaded
-2016-10-10T03:17:18.897Z - success: console loaded
-2016-10-10T03:17:18.898Z - success: package-manager loaded
-2016-10-10T03:17:18.900Z - success: tester loaded
-2016-10-10T03:17:18.901Z - success: ui-kit-preview-extra loaded
-2016-10-10T03:17:18.903Z - success: ui-kit-preview loaded
-2016-10-10T03:17:18.904Z - success: ui-tree loaded
-2016-10-10T03:17:18.930Z - normal: Initializing project E:\cocos\client
-2016-10-10T03:17:18.933Z - normal: Loading packages
-2016-10-10T03:17:18.936Z - normal: Run Application
-2016-10-10T03:17:20.366Z - success: preview server running at http://localhost:7456
-2016-10-10T03:17:23.416Z - normal: 1.2.1-rc.1
-2016-10-10T03:18:26.761Z - normal: Simulator: Get data from file(D:/CocosCreator121/resources/cocos2d-x/simulator/config.json) failed, error code is 2
-2016-10-10T03:18:26.763Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2016-10-10T03:18:26.764Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2016-10-10T03:18:26.764Z - normal: Simulator: FRAME SCALE = 1.00
-2016-10-10T03:18:26.767Z - normal: Simulator: Ready for GLSL
-2016-10-10T03:18:26.767Z - normal: Simulator: Ready for OpenGL 2.0
-2016-10-10T03:18:26.767Z - normal: Simulator: 
-2016-10-10T03:18:26.768Z - normal: Simulator: {
-2016-10-10T03:18:26.770Z - normal: Simulator: 	gl.version: 4.0.0 - Build 10.18.10.3308
-2016-10-10T03:18:26.770Z - normal: Simulator: 	gl.supports_NPOT: true
-2016-10-10T03:18:26.770Z - normal: Simulator: 	cocos2d.x.build_time: 11:37:11 Jul 29 2016
-2016-10-10T03:18:26.770Z - normal: Simulator: 	cocos2d.x.version: cocos2d-x-3.10-lite
-2016-10-10T03:18:26.770Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2016-10-10T03:18:26.770Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2016-10-10T03:18:26.770Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2016-10-10T03:18:26.770Z - normal: Simulator: 	gl.max_texture_size: 16384
-2016-10-10T03:18:26.771Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2016-10-10T03:18:26.771Z - normal: Simulator: 	gl.vendor: Intel
-2016-10-10T03:18:26.771Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics 4000
-2016-10-10T03:18:26.771Z - normal: Simulator: 	gl.max_texture_units: 96
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_ETC1: false
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_PVRTC: false
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2016-10-10T03:18:26.772Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2016-10-10T03:18:26.772Z - normal: Simulator: }
-2016-10-10T03:18:26.772Z - normal: Simulator: 
-2016-10-10T03:18:26.772Z - normal: Simulator: 
-2016-10-10T03:18:26.773Z - normal: Simulator: Project Config:
-2016-10-10T03:18:26.773Z - normal: Simulator:     project dir: D:\CocosCreator121\resources\cocos2d-x\simulator\win32\
-2016-10-10T03:18:26.773Z - normal: Simulator:     writable path: $(PROJDIR)\
-2016-10-10T03:18:26.773Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2016-10-10T03:18:26.773Z - normal: Simulator:     frame size: 1024 x 768
-2016-10-10T03:18:26.773Z - normal: Simulator:     frame scale: 1.00
-2016-10-10T03:18:26.775Z - normal: Simulator:     show console: NO
-2016-10-10T03:18:26.775Z - normal: Simulator:     write debug log: NO ()
-2016-10-10T03:18:26.775Z - normal: Simulator:     listen: 
-2016-10-10T03:18:26.775Z - normal: Simulator:     debugger: none
-2016-10-10T03:18:26.775Z - normal: Simulator:     add searching path:
-2016-10-10T03:18:26.775Z - normal: Simulator: 
-2016-10-10T03:18:26.776Z - normal: Simulator: 
-2016-10-10T03:18:26.776Z - normal: Simulator: 
-2016-10-10T03:18:26.776Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:18:26.776Z - normal: Simulator: LOAD Js FILE: main.js
-2016-10-10T03:18:26.776Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:18:27.060Z - normal: Simulator: Cocos2d-JS v3.9
-2016-10-10T03:18:27.150Z - normal: Simulator: iShow!
-2016-10-10T03:18:27.347Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:18:29.661Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:18:29.677Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:18:30.826Z - normal: Simulator: keyDown: 18
-2016-10-10T03:18:30.976Z - normal: Simulator: keyDown: 0
-2016-10-10T03:18:33.452Z - normal: Simulator: Get data from file(D:/CocosCreator121/resources/cocos2d-x/simulator/config.json) failed, error code is 2
-2016-10-10T03:18:33.453Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2016-10-10T03:18:33.454Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2016-10-10T03:18:33.454Z - normal: Simulator: FRAME SCALE = 1.00
-2016-10-10T03:18:33.498Z - normal: Simulator: Ready for GLSL
-2016-10-10T03:18:33.507Z - normal: Simulator: Ready for OpenGL 2.0
-2016-10-10T03:18:33.508Z - normal: Simulator: 
-2016-10-10T03:18:33.508Z - normal: Simulator: {
-2016-10-10T03:18:33.508Z - normal: Simulator: 	gl.version: 4.0.0 - Build 10.18.10.3308
-2016-10-10T03:18:33.509Z - normal: Simulator: 	gl.supports_NPOT: true
-2016-10-10T03:18:33.509Z - normal: Simulator: 	cocos2d.x.build_time: 11:37:11 Jul 29 2016
-2016-10-10T03:18:33.509Z - normal: Simulator: 	cocos2d.x.version: cocos2d-x-3.10-lite
-2016-10-10T03:18:33.509Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2016-10-10T03:18:33.509Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2016-10-10T03:18:33.509Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.max_texture_size: 16384
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.vendor: Intel
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics 4000
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.max_texture_units: 96
-2016-10-10T03:18:33.510Z - normal: Simulator: 	gl.supports_ETC1: false
-2016-10-10T03:18:33.511Z - normal: Simulator: 	gl.supports_PVRTC: false
-2016-10-10T03:18:33.511Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2016-10-10T03:18:33.511Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2016-10-10T03:18:33.511Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2016-10-10T03:18:33.511Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2016-10-10T03:18:33.511Z - normal: Simulator: }
-2016-10-10T03:18:33.511Z - normal: Simulator: 
-2016-10-10T03:18:33.511Z - normal: Simulator: 
-2016-10-10T03:18:33.515Z - normal: Simulator: Project Config:
-2016-10-10T03:18:33.516Z - normal: Simulator:     project dir: D:\CocosCreator121\resources\cocos2d-x\simulator\win32\
-2016-10-10T03:18:33.516Z - normal: Simulator:     writable path: $(PROJDIR)\
-2016-10-10T03:18:33.517Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2016-10-10T03:18:33.527Z - normal: Simulator:     frame size: 1024 x 768
-2016-10-10T03:18:33.528Z - normal: Simulator:     frame scale: 1.00
-2016-10-10T03:18:33.528Z - normal: Simulator:     show console: NO
-2016-10-10T03:18:33.528Z - normal: Simulator:     write debug log: NO ()
-2016-10-10T03:18:33.528Z - normal: Simulator:     listen: 
-2016-10-10T03:18:33.529Z - normal: Simulator:     debugger: none
-2016-10-10T03:18:33.529Z - normal: Simulator:     add searching path:
-2016-10-10T03:18:33.529Z - normal: Simulator: 
-2016-10-10T03:18:33.529Z - normal: Simulator: 
-2016-10-10T03:18:33.529Z - normal: Simulator: 
-2016-10-10T03:18:33.530Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:18:33.530Z - normal: Simulator: LOAD Js FILE: main.js
-2016-10-10T03:18:33.530Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:18:33.784Z - normal: Simulator: Cocos2d-JS v3.9
-2016-10-10T03:18:33.865Z - normal: Simulator: iShow!
-2016-10-10T03:18:34.070Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:18:36.076Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:18:36.094Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:19:11.647Z - normal: Simulator: Get data from file(D:/CocosCreator121/resources/cocos2d-x/simulator/config.json) failed, error code is 2
-2016-10-10T03:19:11.650Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2016-10-10T03:19:11.651Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2016-10-10T03:19:11.651Z - normal: Simulator: FRAME SCALE = 1.00
-2016-10-10T03:19:11.717Z - normal: Simulator: Ready for GLSL
-2016-10-10T03:19:11.718Z - normal: Simulator: Ready for OpenGL 2.0
-2016-10-10T03:19:11.731Z - normal: Simulator: 
-2016-10-10T03:19:11.731Z - normal: Simulator: {
-2016-10-10T03:19:11.731Z - normal: Simulator: 	gl.version: 4.0.0 - Build 10.18.10.3308
-2016-10-10T03:19:11.731Z - normal: Simulator: 	gl.supports_NPOT: true
-2016-10-10T03:19:11.731Z - normal: Simulator: 	cocos2d.x.build_time: 11:37:11 Jul 29 2016
-2016-10-10T03:19:11.731Z - normal: Simulator: 	cocos2d.x.version: cocos2d-x-3.10-lite
-2016-10-10T03:19:11.731Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2016-10-10T03:19:11.731Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2016-10-10T03:19:11.732Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2016-10-10T03:19:11.732Z - normal: Simulator: 	gl.max_texture_size: 16384
-2016-10-10T03:19:11.732Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2016-10-10T03:19:11.732Z - normal: Simulator: 	gl.vendor: Intel
-2016-10-10T03:19:11.733Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics 4000
-2016-10-10T03:19:11.733Z - normal: Simulator: 	gl.max_texture_units: 96
-2016-10-10T03:19:11.733Z - normal: Simulator: 	gl.supports_ETC1: false
-2016-10-10T03:19:11.733Z - normal: Simulator: 	gl.supports_PVRTC: false
-2016-10-10T03:19:11.733Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2016-10-10T03:19:11.734Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2016-10-10T03:19:11.734Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2016-10-10T03:19:11.734Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2016-10-10T03:19:11.734Z - normal: Simulator: }
-2016-10-10T03:19:11.734Z - normal: Simulator: 
-2016-10-10T03:19:11.734Z - normal: Simulator: 
-2016-10-10T03:19:11.738Z - normal: Simulator: Project Config:
-2016-10-10T03:19:11.739Z - normal: Simulator:     project dir: D:\CocosCreator121\resources\cocos2d-x\simulator\win32\
-2016-10-10T03:19:11.739Z - normal: Simulator:     writable path: $(PROJDIR)\
-2016-10-10T03:19:11.739Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2016-10-10T03:19:11.739Z - normal: Simulator:     frame size: 1136 x 640
-2016-10-10T03:19:11.740Z - normal: Simulator:     frame scale: 1.00
-2016-10-10T03:19:11.740Z - normal: Simulator:     show console: NO
-2016-10-10T03:19:11.740Z - normal: Simulator:     write debug log: NO ()
-2016-10-10T03:19:11.740Z - normal: Simulator:     listen: 
-2016-10-10T03:19:11.740Z - normal: Simulator:     debugger: none
-2016-10-10T03:19:11.741Z - normal: Simulator:     add searching path:
-2016-10-10T03:19:11.741Z - normal: Simulator: 
-2016-10-10T03:19:11.741Z - normal: Simulator: 
-2016-10-10T03:19:11.741Z - normal: Simulator: 
-2016-10-10T03:19:11.741Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:19:11.742Z - normal: Simulator: LOAD Js FILE: main.js
-2016-10-10T03:19:11.742Z - normal: Simulator: ------------------------------------------------
-2016-10-10T03:19:12.012Z - normal: Simulator: Cocos2d-JS v3.9
-2016-10-10T03:19:12.095Z - normal: Simulator: iShow!
-2016-10-10T03:19:12.288Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:19:14.293Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T03:19:14.310Z - normal: Simulator: Stroke Currently only supported on iOS and Android!
-2016-10-10T07:20:20.506Z - info: shutdown preview server
+2016-11-07T02:09:35.523Z - normal: Load ~/.CocosCreator/settings.json
+2016-11-07T02:09:35.529Z - normal: checking language setting...
+2016-11-07T02:09:35.529Z - normal: Language: zh
+2016-11-07T02:09:36.618Z - success: protocol editor-framework registered
+2016-11-07T02:09:36.618Z - success: protocol app registered
+2016-11-07T02:09:36.618Z - success: protocol packages registered
+2016-11-07T02:09:36.618Z - success: protocol theme registered
+2016-11-07T02:09:36.618Z - success: protocol unpack registerred
+2016-11-07T02:09:36.851Z - normal: connected!
+2016-11-07T02:09:36.857Z - normal: Check project E:\cocos\client
+2016-11-07T02:09:36.862Z - normal: Initializing Cocos Creator Editor
+2016-11-07T02:09:37.197Z - normal: Initializing Cocos2d
+2016-11-07T02:09:37.307Z - normal: Initializing Asset Database
+2016-11-07T02:09:37.322Z - success: protocol uuid registerred
+2016-11-07T02:09:37.322Z - success: protocol db registerred
+2016-11-07T02:09:37.322Z - success: protocol thumbnail registerred
+2016-11-07T02:09:37.323Z - normal: Loading editor/builtin packages
+2016-11-07T02:09:37.447Z - success: assets loaded
+2016-11-07T02:09:37.449Z - success: builder loaded
+2016-11-07T02:09:37.452Z - success: hierarchy loaded
+2016-11-07T02:09:37.454Z - success: inspector loaded
+2016-11-07T02:09:37.455Z - success: keystore loaded
+2016-11-07T02:09:37.457Z - success: node-library loaded
+2016-11-07T02:09:37.459Z - success: preferences loaded
+2016-11-07T02:09:37.473Z - success: project-importer loaded
+2016-11-07T02:09:37.474Z - success: project-settings loaded
+2016-11-07T02:09:37.476Z - success: ui-kit loaded
+2016-11-07T02:09:37.477Z - success: ui-grid loaded
+2016-11-07T02:09:37.480Z - success: scene loaded
+2016-11-07T02:09:37.481Z - success: sprite-editor loaded
+2016-11-07T02:09:37.484Z - success: timeline loaded
+2016-11-07T02:09:37.484Z - normal: Loading builtin packages
+2016-11-07T02:09:37.486Z - success: asset-db-debugger loaded
+2016-11-07T02:09:37.488Z - success: cocos-package loaded
+2016-11-07T02:09:37.489Z - success: code-editor loaded
+2016-11-07T02:09:37.489Z - success: color-picker loaded
+2016-11-07T02:09:37.491Z - success: console loaded
+2016-11-07T02:09:37.492Z - success: package-manager loaded
+2016-11-07T02:09:37.494Z - success: tester loaded
+2016-11-07T02:09:37.496Z - success: ui-kit-preview-extra loaded
+2016-11-07T02:09:37.496Z - success: ui-kit-preview loaded
+2016-11-07T02:09:37.497Z - success: ui-tree loaded
+2016-11-07T02:09:37.522Z - normal: Initializing project E:\cocos\client
+2016-11-07T02:09:37.525Z - normal: Loading packages
+2016-11-07T02:09:37.534Z - normal: Run Application
+2016-11-07T02:09:38.454Z - success: preview server running at http://localhost:7456
+2016-11-07T02:09:41.876Z - normal: 1.2.1-rc.1

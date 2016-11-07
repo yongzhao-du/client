@@ -4,9 +4,9 @@
     "unknown"
   ],
   "names": [],
-  "mappings": "AAAA,MAAM,CAAC,OAAO,CAAC,WAAW,GAAG;AACzB,QAAI,EAAI,CAAC;AACT,QAAI,EAAI,CAAC;AACT,QAAI,EAAI,CAAC;CACZ,CAAA;;AAED,MAAM,CAAC,OAAO,CAAC,OAAO,GAAG;AACrB,QAAI,EAAgB,CAAC;AACrB,mBAAe,EAAK,CAAC;AACrB,aAAS,EAAQ,CAAC;AAClB,cAAU,EAAU,CAAC;AACrB,mBAAe,EAAK,CAAC;AACrB,kBAAc,EAAM,CAAC;AACrB,iBAAa,EAAO,CAAC;AACrB,eAAW,EAAS,CAAC;CACxB,CAAA;;AAED,MAAM,CAAC,OAAO,CAAC,QAAQ,GAAG;AACtB,QAAI,EAAY,CAAC;AACjB,kBAAc,EAAE,CAAC;AACjB,iBAAa,EAAG,CAAC;CACpB,CAAA",
+  "mappings": "AAAA,MAAM,CAAC,OAAO,CAAC,WAAW,GAAG;AACzB,QAAI,EAAI,CAAC;AACT,QAAI,EAAI,CAAC;AACT,QAAI,EAAI,CAAC;CACZ,CAAA;;AAED,MAAM,CAAC,OAAO,CAAC,OAAO,GAAG;AACrB,QAAI,EAAgB,CAAC;AACrB,mBAAe,EAAK,CAAC;AACrB,aAAS,EAAQ,CAAC;AAClB,cAAU,EAAU,CAAC;AACrB,mBAAe,EAAK,CAAC;AACrB,kBAAc,EAAM,CAAC;AACrB,iBAAa,EAAO,CAAC;AACrB,eAAW,EAAS,CAAC;AACrB,iBAAa,EAAO,CAAC;AACrB,kBAAc,EAAM,CAAC;CACxB,CAAA;;AAED,MAAM,CAAC,OAAO,CAAC,QAAQ,GAAG;AACtB,QAAI,EAAY,CAAC;AACjB,kBAAc,EAAE,CAAC;AACjB,iBAAa,EAAG,CAAC;CACpB,CAAA",
   "file": "unknown",
   "sourcesContent": [
-    "module.exports.TriggerType = {\r\n    NONE:   0,\r\n    TIME:   1,\r\n    AREA:   2,\r\n}\r\n\r\nmodule.exports.CmdType = {\r\n    NONE:               0,\r\n    CONTROL_ENABLED:    1,\r\n    LOCK_AREA:  \t    2,\r\n    CREATE_MON:\t        3,\r\n    SHOW_TRANS_DOOR:    4,\r\n    SHOW_MOVE_TIPS:\t    5,\r\n    CHANGE_HURDLE:      6,\r\n    MOVE_CAMERA:        7,\r\n}\r\n\r\nmodule.exports.CondType = {\r\n    NONE:           0,\r\n    TOTAL_MON_KILL: 1,\r\n    CONFIG_CUSTOM:  2,\r\n}"
+    "module.exports.TriggerType = {\r\n    NONE:   0,\r\n    TIME:   1,\r\n    AREA:   2,\r\n}\r\n\r\nmodule.exports.CmdType = {\r\n    NONE:               0,\r\n    CONTROL_ENABLED:    1,\r\n    LOCK_AREA:  \t    2,\r\n    CREATE_MON:\t        3,\r\n    SHOW_TRANS_DOOR:    4,\r\n    SHOW_MOVE_TIPS:\t    5,\r\n    CHANGE_HURDLE:      6,\r\n    MOVE_CAMERA:        7,\r\n    DO_MOVE_GUIDE:      8,\r\n    DO_TOUCH_GUIDE:     9,\r\n}\r\n\r\nmodule.exports.CondType = {\r\n    NONE:           0,\r\n    TOTAL_MON_KILL: 1,\r\n    CONFIG_CUSTOM:  2,\r\n}"
   ]
 }
